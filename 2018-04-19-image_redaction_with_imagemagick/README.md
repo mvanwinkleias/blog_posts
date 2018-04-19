@@ -1,6 +1,6 @@
 # Redacting the Same Part of Images
 
-I recently took some screenshots from within a web browser that I used to do a public writeup on a phishing attempt.
+I recently took some screenshots from within a web browser that I used to do a public write-up on a phishing attempt.
 
 I use Ubuntu Mate, and I have a (small) script for taking pictures of the current window:</p>
 
@@ -40,6 +40,8 @@ Here's the command that removes the bookmarks bar:
 <pre>
 convert input.png -chop 0x28+0+90 output.png
 </pre>
+
+It removes a row "28 pixels tall starting at pixel 90".
 
 [redacted_image]: ./redacted.png
 
