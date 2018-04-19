@@ -15,8 +15,9 @@ I take screenshots by pressing alt+f2 , typing 'cw' , pressing enter, and waitin
 
 Which led to screen shots similar to this:
 
-![Image I want to redact][redact_me_example]
 [redact_me_example]: ./redact_me_example.png
+
+![Image I want to redact][redact_me_example]
 
 In the above image I manually removed the sensitive portion of the shot with Gimp's erase tool.
 
