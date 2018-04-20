@@ -2,8 +2,13 @@
 
 If you're anything like me, you might have **foolishly** written a Python script that is indented with tabs instead of spaces.
 
+Here's a way to convert the initial tabs to spaces...
+
 <pre>
-find . -type f -iname "*.py" -print0 | while IFS= read -r -d $'\0' line; do expand -i -t 4 $line | sponge $line ; done
+find . -type f -iname "*.py" -print0 | \
+while IFS= read -r -d $'\0' line; \
+do expand -i -t 4 "$line" \
+| sponge "$line" ; done
 </pre>
 
 Somebody should submit a patch to the Linux Kernel to change all of the tabs to spaces.  Get with the times poeple!!!1
