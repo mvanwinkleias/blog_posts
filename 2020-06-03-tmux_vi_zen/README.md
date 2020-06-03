@@ -33,7 +33,7 @@ To cycle between splits:
 ctrl + b o
 ```
 
-# Maximize / Restore Pane
+## Maximize / Restore Pane
 
 ```
 ctrl + b z
@@ -106,12 +106,3 @@ ctrl + w _
 :e path/to/file
 ```
 
-
-# Changing navigation bindings
-
-```
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-```
