@@ -8,7 +8,6 @@ src/output/*
 src/log/*
 
 # python
-*.swp
 __pycache__/
 *.pyc
 
@@ -20,3 +19,6 @@ src/java/**/*.class
 
 # perl6
 src/**/.precomp
+
+# editors
+*.swp
