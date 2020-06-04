@@ -1,3 +1,28 @@
+# Forward
+
+## A Note About Repo Naming
+
+You're going to have a lot of repos.  Don't fear that.  Sometimes the best names to give
+a repo look like:
+
+* ias_102003_hunt_mac_addresses
+
+We use RT.  [ias #102003] corresponds to a ticket number that can be referenced, and updated
+by anybody with access to the ticketing system.
+
+Sometimes you'll make a repo just for yourself in your private space.  My name is Martin VanWinkle .
+
+I'll name repos like this:
+
+* mv_fun_with_something
+
+and put it in my private git space.  If I want to share it with a teammate, and they clone the repo
+into their source directory, it's more obvious what that repo does and it manages expectations.
+
+You will want to have a space for "production" repos.  If you deploy with packages, you'll want
+a way to refer to the repository location that housed the code for the artifact.
+
+
 # Repo Layout
 
 A good .gitignore is very important.  Chances are you can make a large one that covers a bunch of
