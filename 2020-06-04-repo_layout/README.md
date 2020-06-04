@@ -19,7 +19,9 @@ I'll name repos like this:
 and put it in my private git space.  If I want to share it with a teammate, and they clone the repo
 into their source directory, it's more obvious what that repo does and it manages expectations.
 
-You will want to have a space for "production" repos.  If you deploy with packages, you'll want
+You will want to have a space for "production" repos.
+
+If you deploy with packages, you'll want
 a way to refer to the repository location that housed the code for the artifact.
 
 
