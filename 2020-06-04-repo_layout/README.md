@@ -1,4 +1,23 @@
+# Purpose
+
+* To change "quick and dirty" to "quick and something that can be built upon"
+
 # Forward
+
+I don't consider this type of discipline only worth while for Developers.
+My profession is System Administration, with emphasis on "other things".
+While the ideas presented here might seem complex, they are presented in a
+"do this" manner, and I understand there might be questions.
+
+In my opinion, "I'm not a Developer" is not a good argument for not following
+good programming practice; especially when people are literally showing
+you how to make your life easier.
+
+If you program, and think to yourself, "I'll never need to put this in a
+source repo", this is for you.
+
+These techniques are revision control system agnostic.  That said,
+the majority of my work is in git.
 
 ## A Note About Repo Naming
 
@@ -24,6 +43,10 @@ You will want to have a space for "production" repos.
 If you deploy with packages, you'll want
 a way to refer to the repository location that housed the code for the artifact.
 
+## Monolithic vs Modular Environments
+
+If you are capable of being modular, then go for it.  That's one of the things
+this tutorial is all about.
 
 # Repo Layout
 
@@ -55,7 +78,7 @@ Here's how we're going to organize things during this tutorial:
                 └── HelloRepoLayout.rb
 ```
 
-# Goals
+# Design Goals
 
 All of these languages are unrelated, but they use the same layout.
 
