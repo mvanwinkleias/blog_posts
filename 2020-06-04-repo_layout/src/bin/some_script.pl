@@ -12,4 +12,7 @@ use IAS::HelloRepoLayout;
 
 IAS::HelloRepoLayout::hello();
 
+# We can also do OO easily:
 
+my $app = IAS::HelloRepoLayout->new();
+$app->hello();
