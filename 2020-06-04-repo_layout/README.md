@@ -26,7 +26,7 @@ a repo look like:
 
 * ias_102003_hunt_mac_addresses
 
-We use RT.  [ias #102003] corresponds to a ticket number that can be referenced, and updated
+Where 102003 corresponds to a ticket number that can be referenced, and updated
 by anybody with access to the ticketing system.
 
 Sometimes you'll make a repo just for yourself in your private space.  My name is Martin VanWinkle .
