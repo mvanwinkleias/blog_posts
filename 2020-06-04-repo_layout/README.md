@@ -61,6 +61,7 @@ Here's how we're going to organize things during this tutorial:
 ├── README.md
 └── src
     ├── bin
+    │   ├── some_script.php
     │   ├── some_script.pl
     │   ├── some_script.py
     │   └── some_script.rb
@@ -68,6 +69,9 @@ Here's how we're going to organize things during this tutorial:
         ├── perl5
         │   └── IAS
         │       └── HelloRepoLayout.pm
+        ├── php7
+        │   └── IAS
+        │       └── HelloRepoLayout.php
         ├── python3
         │   └── IAS
         │       └── HelloRepoLayout
