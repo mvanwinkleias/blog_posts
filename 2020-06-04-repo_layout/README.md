@@ -80,7 +80,7 @@ A ticket came in.  You need to write a script that looks for the mac address
 in a DHCP log file, and pull out the IP addresses that the mac address has
 been assigned.
 
-You create the repo in your personal space.
+You create the repo in your group space.
 
 You name it something like:
 
