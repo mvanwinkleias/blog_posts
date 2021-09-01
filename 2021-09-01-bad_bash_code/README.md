@@ -7,6 +7,7 @@ input can result in arbitrary code exploits.
 
 In general, you should:
 
+* Sanitize input
 * Always quote variables you intend on passing in as single arguments
 * Disable options processing using "--" before you pass in untrusted input.
 
