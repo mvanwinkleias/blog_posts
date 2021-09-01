@@ -1,5 +1,7 @@
 # Bad Bash Code
 
+## WARNING
+
 This code shows how running commands with arguments that come from untrusted
 input can result in arbitrary code exploits.
 
