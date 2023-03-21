@@ -50,7 +50,7 @@ Assign, delegate, etc.
 * Use project template systems.
 * Use automation.
 
-### PO.4:  Perform Software Security Audits.
+### PO.4: Perform Software Security Audits.
 
 Example:
 
@@ -71,7 +71,7 @@ Taken straight from the practice name.
 
 ### PS.3: Archive and Protect Each Software Release
 
-## PW: Produce Well-Secured Software (PW)
+## PW: Produce Well-Secured Software
 
 This Practice Group is mainly focused on doing the above correctly.
 
@@ -102,8 +102,12 @@ But like, with "security".
 
 ## RV: Respond to Vulnerabilities
 
+This is just good vulnerability management.
+
+One slide.
+
 ### RV.1: Identify and Confirm Vulnerabilities
 
 ### RV.2: Assess, Prioritize, and Remediate Vulnerabilities
 
-### RV.3: RV.3: Analyze Vulnerabilities to Identify Their Root Causes
+### RV.3: Analyze Vulnerabilities to Identify Their Root Causes
