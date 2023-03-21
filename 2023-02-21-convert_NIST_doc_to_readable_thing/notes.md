@@ -1,3 +1,16 @@
+# NIST SSDF Distilled
+
+## Abstract
+
+NIST's Secure Software Development Framework is illegible.
+I wrote a script that fixes that.  Then I read through it and figured
+lots of people could benefit from the work, and a summary.  I include
+advice for getting started that aligns with the SSDF.
+
+If you're a big shop or a small shop and you want to tighten the
+security in your Software Development system, and the NIST SSDF
+was overly difficult to get through, then this talk is for you.
+
 ## Intro
 
 ### About Me
@@ -9,6 +22,20 @@
 >
 > I'd like to think my software development practices are secure,
 > and I was interested in reconciling them with the SSDF.
+
+
+### Why this Presentation
+
+* I can't read the [document](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
+* I can't read the [spreadsheet](https://csrc.nist.gov/csrc/media/Publications/sp/800-218/final/documents/NIST.SP.800-218.SSDF-table.xlsx).
+
+> I can't read the document or the spreadsheet.
+> It's not provided in a good format.
+
+### I CAN Read These:
+
+* [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
+* [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
 
 ### Small Places
 
