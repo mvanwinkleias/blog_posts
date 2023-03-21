@@ -10,6 +10,23 @@ use IO::File;
 use Text::CSV qw ( csv );
 use Data::Dumper;
 
+use Getopt::Long;
+
+my @OPTIONS=(
+	'print-references!',
+	'print-tasks!',
+	'print-examples!',
+);
+
+my $OPTIONS_VALUES = {
+	'print-tasks' => 1,
+	'print-examples' => 1,
+	'print-references' => 0,
+};
+
+GetOptions($OPTIONS_VALUES, @OPTIONS)
+or die "Bad option.  Available: ".$/.Dumper(\@OPTIONS).$/;
+
 my $file_name = $ARGV[0]; shift @ARGV;
 
 my $aoh = csv (
@@ -57,7 +74,9 @@ sub dump_markdown
 			print $/;
 		}
 
-		if ( defined $record->{'Tasks'} && length($record->{'Tasks'}) )
+		if ( 
+			$OPTIONS_VALUES->{'print-tasks'}
+			&& defined $record->{'Tasks'} && length($record->{'Tasks'}) )
 		{
 			my @parts = split(':', $record->{'Tasks'} , 2);
 	
@@ -71,7 +90,9 @@ sub dump_markdown
 
 		}
 
-		if ( defined $record->{'Notional Implementation Examples'} 
+		if ( 
+			$OPTIONS_VALUES->{'print-examples'}
+			&& defined $record->{'Notional Implementation Examples'} 
 			&& length($record->{'Notional Implementation Examples'})
 		)
 		{
@@ -101,7 +122,9 @@ sub dump_markdown
 			}
 		}
 		
-		if (defined $record->{'References'}  && length( $record->{'References'} ) )
+		if (
+			$OPTIONS_VALUES->{'print-references'}
+			&& defined $record->{'References'}  && length( $record->{'References'} ) )
 		{
 			print "\n#### References\n\n";
 			my @references = split("\n", $record->{'References'});
