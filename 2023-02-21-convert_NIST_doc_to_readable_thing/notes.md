@@ -36,9 +36,22 @@ All of these tidbits of information end up relating to the SSDF
 
 Learn basic git interaction.  You don't need to be a wizzard.
 
+> Learn basic git interaction.  It's ubiquitous now.  You should be able to
+> clone, add, commit, push, pull, tag.
+> You don't need to be a wizzard.
+
+#### Don't commit credentials / sensitive information
+
+Learn how to refer to credentials that are located outside
+of the source repository.
+
 #### Put your code in a repo
 
-If you don't know how to do this locally then...
+* Can be hosted locally (work...)
+* Can be hosted on a forge (gitlab, github)
+
+> Put your code in a repo.
+> If you don't know how to do this locally then...
 
 #### Get a Private Forge Account
 
@@ -47,20 +60,24 @@ Learning basic interaction with these services is crucial:
 * github.com
 * gitlab.com
 
+> Get a private forge account.  Gitlab and github are 2 popular options.
+
 #### Use It Securely
 
 * Use a secure passphrase, 2FA
 * Use separate ssh keys for separate machines
 * Manage permissions appropriately
 
+> Secure it with a good passphrase.  Strongly consider 2FA.
+> Use different SSH keys for different machines
+> Make sure you understand permissions and how to manage them.
+
 #### Back It Up
 
 Keep archived copies of your software.
 
-#### Don't commit credentials / sensitive information
+> Cron up a script that runs git pull, or whatever.  Back that up.
 
-Learn how to refer to credentials that are located outside
-of the source repository.
 
 ### Practices
 
