@@ -1,41 +1,70 @@
-# From the Ground Up...
+## Intro
+
+### About Me
+
+* Administrator / Programmer
+
+> I've worked in various programming and adminstrative positions
+> at VOIP companies, colleges and laboratories.
+>
+> I'd like to think my software development practices are secure,
+> and I was interested in reconciling them with the SSDF.
+
+### Small Places
+
+I work at a small place.
+
+> I currently work at a small place.  I don't have developers working
+> for me, and all of my customers are internal.  I have no public-facing
+> programming work.
+
+## From the Ground Up...
 
 If you're just starting out, here's what I would focus on.
 
 All of these tidbits of information end up relating to the SSDF
 (Secure Software Development Framework).
 
-## Repos
+> I realize that my audice will contain inexperienced people at small
+> places.  So, in this talk I'll include a brief, but (hopefully)
+> informative rant on what I'd start looking at, instead of diving
+> right in to a framework.
+>
+> All of this advice relates to the SSDF.
+
+### Repos
 
 Learn basic git interaction.  You don't need to be a wizzard.
 
-### Put your code in a repo
+#### Put your code in a repo
 
 If you don't know how to do this locally then...
 
-### Get a Private Forge Account
+#### Get a Private Forge Account
 
 Learning basic interaction with these services is crucial:
 
 * github.com
 * gitlab.com
 
-### Use It Securely
+#### Use It Securely
 
 * Use a secure passphrase, 2FA
 * Use separate ssh keys for separate machines
 * Manage permissions appropriately
 
-### Back It Up
+#### Back It Up
 
 Keep archived copies of your software.
 
-### Don't commit credentials / sensitive information
+#### Don't commit credentials / sensitive information
 
 Learn how to refer to credentials that are located outside
 of the source repository.
 
-## Sanitize Inputs
+### Practices
+
+#### Sanitize Inputs
 
 This is always taken in context.  If it's a non-critical program that
 will only be run by trusted people, then you're requirements for
@@ -44,26 +73,26 @@ sanitizing inputs can be more relaxed.
 If it's a critical process or it might be run by untrusted people
 then do the best you can at this.
 
-## Use Inputs Securely.  Make Mistakes hard to make.
+#### Use Inputs Securely.  Make Mistakes hard to make.
 
 This is different from sanitizing inputs.
 A clean bullet in a clean gun can still do bad things.
 
-#### Principle of least privilege
+#### Use the Principle of least privilege
 
 Only give / allow permission to do what's needed.
 
-### Make "doing the right" thing easy.
+#### Make "doing the right" thing easy.
 
 * Wrapper scripts -> Automation and Testing
 * Documentation / Examples
 
-### Don't make doing the right thing difficult.
+#### Don't make doing the right thing difficult.
 
 If, when you're writing software, your actions prevent or make following
 "good advice" difficult, then you're doing something wrong.
 
-# Notes
+# SSDF Notes:
 
 ## PO: Prepare the Organization
 
