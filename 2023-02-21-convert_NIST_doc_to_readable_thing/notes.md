@@ -1,8 +1,36 @@
-## Security Requirements for Internal Only Software
+# From the Ground Up...
 
 If you're just starting out, here's what I would focus on.
 
-## Don't commit credentials / sensitive information
+All of these tidbits of information end up relating to the SSDF
+(Secure Software Development Framework).
+
+## Repos
+
+Learn basic git interaction.  You don't need to be a wizzard.
+
+### Put your code in a repo
+
+If you don't know how to do this locally then...
+
+### Get a Private Forge Account
+
+Learning basic interaction with these services is crucial:
+
+* github.com
+* gitlab.com
+
+### Use It Securely
+
+* Use a secure passphrase, 2FA
+* Use separate ssh keys for separate machines
+* Manage permissions appropriately
+
+### Back It Up
+
+Keep archived copies of your software.
+
+### Don't commit credentials / sensitive information
 
 Learn how to refer to credentials that are located outside
 of the source repository.
@@ -27,7 +55,7 @@ Only give / allow permission to do what's needed.
 
 ### Make "doing the right" thing easy.
 
-* Wrapper scripts
+* Wrapper scripts -> Automation and Testing
 * Documentation / Examples
 
 ### Don't make doing the right thing difficult.
