@@ -13,6 +13,19 @@ was overly difficult to get through, then this talk is for you.
 
 ## Intro
 
+### Why this Presentation
+
+* I can't read the [NIST SP 800-218 document](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
+* I can't read the [corresponding spreadsheet](https://csrc.nist.gov/csrc/media/Publications/sp/800-218/final/documents/NIST.SP.800-218.SSDF-table.xlsx).
+
+> I can't read the NIST SSDF document or the spreadsheet.
+> It's not provided in a good format.
+
+### I CAN Read These:
+
+* [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
+* [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
+
 ### About Me
 
 * Administrator / Programmer
@@ -23,27 +36,16 @@ was overly difficult to get through, then this talk is for you.
 > I'd like to think my software development practices are secure,
 > and I was interested in reconciling them with the SSDF.
 
+### Small Places (About Me, continued)
 
-### Why this Presentation
+* I work at a relatively small place.
+* I've worked at big places.
+* I've seen how things scale.
+* I've seen things do not scale.
+* I like applying techniques and processes that help get things done.
+* I know that resources are always going to be constrained.
+* I want people to beneficially level up.
 
-* I can't read the [document](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
-* I can't read the [spreadsheet](https://csrc.nist.gov/csrc/media/Publications/sp/800-218/final/documents/NIST.SP.800-218.SSDF-table.xlsx).
-
-> I can't read the document or the spreadsheet.
-> It's not provided in a good format.
-
-### I CAN Read These:
-
-* [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
-* [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
-
-### Small Places
-
-I work at a small place.
-
-> I currently work at a small place.  I don't have developers working
-> for me, and all of my customers are internal.  I have no public-facing
-> programming work.
 
 ## From the Ground Up...
 
@@ -52,7 +54,7 @@ If you're just starting out, here's what I would focus on.
 All of these tidbits of information end up relating to the SSDF
 (Secure Software Development Framework).
 
-> I realize that my audice will contain inexperienced people at small
+> I realize that my audience will contain inexperienced people at small
 > places.  So, in this talk I'll include a brief, but (hopefully)
 > informative rant on what I'd start looking at, instead of diving
 > right in to a framework.
@@ -140,16 +142,23 @@ If, when you're writing software, your actions prevent or make following
 
 ## PO: Prepare the Organization
 
-### PO.1: Make people aware.
+### PO.1: Make the Organization aware.
+
+Create, maintain, and communicate the policy and requirements for:
+
+* Software development infrastructure
+* Organization-developed software
 
 ### PO.2: Take leadership
 
-Assign, delegate, etc.
+* Prepare, assign, delegate, etc.
+* Obtain commitment from management.
 
 ### PO.3: Reduce repeat work and Document
 
-* Use project template systems.
-* Use automation.
+* Use project template systems. i.e. [Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/)
+* Use automation.  (I have a rant about this...)
+	* Have an audit trail
 
 ### PO.4: Perform Software Security Audits.
 
@@ -160,7 +169,7 @@ Example:
 
 ### PO.5 Implement, Maintain, and Secure Your environments.
 
-Do it.
+Make the environment.
 
 ## PS: Protect the Software
 
@@ -172,22 +181,31 @@ Taken straight from the practice name.
 
 ### PS.3: Archive and Protect Each Software Release
 
+* Backup your artifacts.  (Make sure you're backing up your code too...)
+* Sign / hash your artifacts.
+* Have an audit trail
+
 ## PW: Produce Well-Secured Software
 
-This Practice Group is mainly focused on doing the above correctly.
+Make the software.
 
 ### PW.1: Design Software to Meet Security Requirements and Mitigate Security Risks
 
 * Use what you did for P0.3 (Reduce repeat work and document).
+* Reconcile
+* Integrate with existing infrastructure (logging, IAM, etc)
 
-### PW.2: Audit
+### PW.2: Audit and Review
 
 * Reconcile with PO.4 (Perform Security audits).
+* Code Reviews
 
 ### PW.4: Do What PO.3 (Reduce repeat work) Says.
 
-During the process of producing code, reconcile common actions with
+* Reuse and improve the good stuff
+* During the process of producing code, reconcile common actions with
 templates.
+* Audit other people's stuff
 
 ### PW.5: Follow Best Practices for Secure Code
 
