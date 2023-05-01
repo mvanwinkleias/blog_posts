@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20200804T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Documentation" note="" work="144000" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Wiki" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Trello" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="4" name="Ticket" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="5" name="Repo" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="6" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="7" name="Capacity Planning and Allocation" note="" work="374400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="8" name="Physical" note="" work="230400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="9" name="Rack" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="10" name="elevation" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="11" name="mounting hardware" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="12" name="Environment" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="13" name="Heating / Cooling" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="14" name="Network" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="15" name="Cables" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="16" name="Ports" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="17" name="Power" note="" work="86400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="18" name="Cables" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="19" name="Outlets" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="20" name="Power Consumption" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+      </task>
+      <task id="21" name="Virtual" note="" work="115200" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="22" name="vmhosts" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="23" name="RAM" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="24" name="CPU" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="25" name="AWS" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="26" name="Storage" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="27" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="28" name="Purchasing and Asset Management" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="29" name="Asset Tags" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="30" name="Installation Preparation" note="" work="374400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="31" name="Physical Network" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="32" name="Allocate Ports" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="33" name="IPAM" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="34" name="Load Balancing" note="" work="86400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="35" name="F5" note="" work="86400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="36" name="Certificates" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="37" name="Pools" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="38" name="Virtual Servers" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+      </task>
+      <task id="39" name="Firewall" note="" work="172800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="40" name="Hide NATs" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="41" name="Static NATs" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="42" name="DMZ" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="43" name="Groups / Roles" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="44" name="Individual Rules" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="45" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="46" name="Bastion host access" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+      </task>
+      <task id="47" name="VPN" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="48" name="LDAP Entries" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="49" name="Firewall Entries" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+    </task>
+    <task id="50" name="Installation" note="" work="144000" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="51" name="Rack" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="52" name="Assistance needed?" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="53" name="Network" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="54" name="Label Cables" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="55" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="56" name="Asset Labels" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="57" name="Name" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="58" name="RT Ticket Number" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+    </task>
+    <task id="59" name="Monitoring" note="" work="144000" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="60" name="Active" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="61" name="Nagios" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="62" name="Pingdom" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="63" name="Passive" note="" work="57600" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="64" name="SNMP Traps" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="65" name="Logs" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="66" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="67" name="Decommission" note="" work="172800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="68" name="Power off" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="69" name="Label as decomissioned" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="70" name="Uncable" note="" work="86400" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="71" name="Power" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="72" name="Network" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="73" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="74" name="Misc" note="" work="28800" start="20200804T000000Z" end="20200804T170000Z" work-start="20200804T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
