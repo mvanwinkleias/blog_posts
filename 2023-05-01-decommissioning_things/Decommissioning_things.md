@@ -1,8 +1,14 @@
 # Decommissioning Things	
 
-Ticketing systems are good.  You need a ticketing system.
+I work at a relatively small place, and sometimes provisioned infrastructure
+"falls through the cracks" when it was decommissioned.
+
+That's not great, but here's how to clean it up.
 
 ## Tickets for All
+
+Ticketing systems are good.  You need a ticketing system.
+
 
 ### Auditing The New
 
