@@ -70,7 +70,7 @@ Value Added Resellers change, companies get bought out, etc.  Don't put things
 in your configuration that won't widthstand time.  Reference ticketing systems
 or wiki pages.
 
-Also, don't put dates in the comments... Use tickets.
+Also, don't mini-blog in comments.  Use a ticket.
 
 ## Linking Tickets
 
