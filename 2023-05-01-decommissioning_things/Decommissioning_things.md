@@ -67,7 +67,7 @@ comment: 2019-06 Bob from synergytech put this here
 ```
 
 Value Added Resellers change, companies get bought out, etc.  Don't put things
-in your configuration that won't widthstand time.  Reference ticketing systems
+in your configuration that won't withstand time.  Reference ticketing systems
 or wiki pages.
 
 Also, don't mini-blog in comments.  Use a ticket.

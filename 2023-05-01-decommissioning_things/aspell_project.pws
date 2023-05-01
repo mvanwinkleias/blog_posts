@@ -1,20 +1,30 @@
-personal_ws-1.1 en 34 
+personal_ws-1.1 en 46 
+CNAMES
 DEBs
 EL
 EditorConfig
+HTTPS
 Hulu
 IAS
+IPAM
+LDAP
 LastPass
 MERCHANTABILITY
+Nagios
+OpenVPN
+Pingdom
 Pipenv
 README
 RHEL
 RPMs
+TCP
 TOTP
+VLAN
 cp
 debbuild
 debsetup
 deps
+dst
 editorconfig
 edu
 fakeroot
@@ -32,4 +42,6 @@ rpmbuild
 rpmspec
 specfile
 src
+svc
+synergytech
 usr

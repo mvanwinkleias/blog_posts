@@ -22,7 +22,7 @@ then you're editing the wrong thing.
 
 This document describes the systems that are used to track and deploy things at IAS.
 
-It's designed to mostly be "top down" for Creation / Provisioning , and "bottom up" for decomissioning.
+It's designed to mostly be "top down" for Creation / Provisioning , and "bottom up" for decommissioning.
 
 It can also serve as a checklist for a project.  Comments are embedded in the Markdown that can be un-commented.
 
@@ -33,7 +33,7 @@ For provisioning, in general:
 * Make sure there's an RT ticket for the provisioning process.
 * Use that ticket in the comments field, extensible attributes, etc for the project in systems affected by this provisioning.
 
-For decomissioning, in general:
+For decommissioning, in general:
 
 * Update the RT ticket used for provisioning to denote that things related to this deployment should be removed.
 * Work from the bottom of this document, up, undoing what is necessary.
@@ -50,17 +50,17 @@ For decomissioning, in general:
 	* Run-books
 * User Documentation
 
-#### Decomissioning Documentation
+#### Decommissioning Documentation
 
 * At the top of the document, put "DEPRECATED".
-* Include a link to the RT ticket tracking the state of the decomissioning.
+* Include a link to the RT ticket tracking the state of the decommissioning.
 * If the project is being replaced by another project, put in links to the other projects documentation pages, tickets, etc.
 
 #### RT Tickets
 
 Tickets log work that was performed.
 
-RT Ticket numbers also provide a way to convienently search for entities related to each other in disparate systems.
+RT Ticket numbers also provide a way to conveniently search for entities related to each other in disparate systems.
 
 #### Wiki / Google Docs / Drupal
 
@@ -69,7 +69,7 @@ Wiki / Google Docs / Drupal document the Environment.  Lists of documentation sy
 [//]: # ( * Links to Documentation )
 [//]: # ( * Capacity planning and Allocation )
 [//]: # ( 	* Space )
-[//]: # ( 	* Electricty )
+[//]: # ( 	* Electricity )
 [//]: # ( 	* Heating / Cooling )
 [//]: # ( 	* Networking )
 [//]: # (   * Virtual Machines )
@@ -97,9 +97,9 @@ Wiki / Google Docs / Drupal document the Environment.  Lists of documentation sy
 
 If it's not in IPAM, it doesn't exist!
 
-Make sure to put an RT Ticket number in the extensable attributes for your IPAM objects.
+Make sure to put an RT Ticket number in the extensible attributes for your IPAM objects.
 
-This way, when you decomission things, you can just search for the ticket.
+This way, when you decommission things, you can just search for the ticket.
 
 * Networks
 * Host objects
@@ -125,7 +125,7 @@ Certificate creation, renewal, and replacement need to be documented in a ticket
 
 Testing methods for verifying proper encrypted communications should be documented.
 
-#### Decomissioning
+#### Decommissioning
 
 * Revoke certificates
 * Clean up certificates inside of LastPass
