@@ -100,10 +100,10 @@ that would guide the author through the process:
 
 # Pulling it Together
 
-After you've sprinkled ticket numbers everywhere you just search for the ticket number,
-or (as in our case) just searching for ```[ias.edu #999999]``` , and working backward
-through the provisioning document should get you part of the way there.
+* Work backward through the provisioning document
+* Search for entries using the ticket number
+
+Should get you pretty far.
 
 :)
-
 
