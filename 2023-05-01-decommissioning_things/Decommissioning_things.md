@@ -1,4 +1,4 @@
-# Decommissioning things step by step
+# Decommissioning Things
 
 ## Tickets for All
 
@@ -49,7 +49,7 @@ Our tickets are owned by groups, and are "sub-owned" by individuals.  I (try to)
 ## Soft Deprovisioning
 
 We do "soft" deprovisioning where things just get marked for removal or deactivated.
-Then they can be "cleaned up" later.  Sometimes stuff happens...  Tickets.
+Then they can be cleaned up later.  Sometimes stuff happens...  Tickets.
 
 ## Checklists
 
