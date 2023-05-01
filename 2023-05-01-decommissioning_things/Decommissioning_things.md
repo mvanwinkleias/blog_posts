@@ -48,17 +48,40 @@ comment: [ias.edu #9999999] Allow TCP HTTPS 443 to dord.ias.edu
 The comment is a bit redundant and is (IMO) not as good a comment as:
 
 ```
-[ias.edu #9999999] Department of Redundancy Department
+src: any
+dst: dord.ias.edu
+svc: 443
+action: accept
+comment: [ias.edu #9999999] Department of Redundancy Department
 ```
 
-# Linking Tickets
+### Future Proof Comments
+
+This is a fun one to run into:
+
+```
+src: any
+dst: any
+svc: 25
+comment: 2019-06 Bob from synergytech put this here
+```
+
+Value Added Resellers change, companies get bought out, etc.  Don't put things
+in your configuration that won't widthstand time.  Reference ticketing systems
+or wiki pages.
+
+Also, don't put dates in the comments... Use tickets.
+
+## Linking Tickets
 
 Our tickets are owned by groups, and are "sub-owned" by individuals.  I (try to) always get a ticket on THEIR side to reference in my tickets.
 
 ## Soft Deprovisioning
 
 We do "soft" deprovisioning where things just get marked for removal or deactivated.
-Then they can be cleaned up later.  Sometimes stuff happens...  Tickets.
+Then they can be cleaned up later.  Sometimes stuff happens...
+
+Tickets.
 
 ## Checklists
 
