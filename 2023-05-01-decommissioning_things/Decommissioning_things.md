@@ -1,5 +1,7 @@
 # Decommissioning Things	
 
+Ticketing systems are good.  You need a ticketing system.
+
 ## Tickets for All
 
 ### Auditing The New
