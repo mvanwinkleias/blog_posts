@@ -24,7 +24,7 @@ This document describes the systems that are used to track and deploy things at 
 
 It's designed to mostly be "top down" for Creation / Provisioning , and "bottom up" for decommissioning.
 
-It can also serve as a checklist for a project.  Comments are embedded in the Markdown that can be un-commented.
+It can also serve as a checklist for a project.  Comments are embedded in the Markdown that can be uncommented.
 
 ## Checklist
 

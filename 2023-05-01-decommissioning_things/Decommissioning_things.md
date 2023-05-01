@@ -76,9 +76,9 @@ Also, don't mini-blog in comments.  Use a ticket.
 
 Our tickets are owned by groups, and are "sub-owned" by individuals.  I (try to) always get a ticket on THEIR side to reference in my tickets.
 
-## Soft Deprovisioning
+## Soft Decommissioning
 
-We do "soft" deprovisioning where things just get marked for removal or deactivated.
+We do "soft" decommissioning where things just get marked for removal or deactivated.
 Then they can be cleaned up later.  Sometimes stuff happens...
 
 Tickets.
