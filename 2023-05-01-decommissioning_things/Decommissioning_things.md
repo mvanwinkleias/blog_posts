@@ -1,4 +1,4 @@
-# Decommissioning Things
+# Decommissioning Things	
 
 ## Tickets for All
 
@@ -12,6 +12,11 @@ in, that might be a good idea.
 
 ### Auditing The Old
 
+Your purpose is to put the onus on replying to a "ticket" to a group
+you suspect owns the objects.
+
+Your goal is to make this quick and easy for you to do.  Do this by:
+
 * creating an "Is this <object|rule> still in use?" ticket
 * putting it in a specific group's queue
 * annotating comments of the objects with the ticket number on (say) the firewall
@@ -19,11 +24,6 @@ in, that might be a good idea.
 * "... I have a ticket and nobody responded..." or whatever
 
 Use at your discretion; sometimes people can be bothered by a flood of these things.  Plan accordingly, etc.
-
-You just need to have a quick way to make some sort of reliable thing you can find in the future
-for questioning this thing's existence.
-
-That's a ticket.
 
 ## Useful Comments
 
