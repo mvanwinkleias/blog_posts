@@ -13,10 +13,10 @@ Ticketing systems are good.  You need a ticketing system.
 ### Auditing The New
 
 All new changes should reference ticket numbers.  Typically you can do this
-in the comments of (say) a firewall object, an IPAM host, etc
+in the comments of (say) a firewall object, an IPAM host, etc.
 
 If there is a searchable attribute field that you can use to put a ticket number
-in, that might be a good idea.
+in, using that might be a good idea.
 
 ### Auditing The Old
 
@@ -47,7 +47,9 @@ comment: [ias.edu #9999999] Allow TCP HTTPS 443 to dord.ias.edu
 
 The comment is a bit redundant and is (IMO) not as good a comment as:
 
-* \[ias.edu #9999999\] Department of Redundancy Department
+```
+[ias.edu #9999999] Department of Redundancy Department
+```
 
 # Linking Tickets
 
