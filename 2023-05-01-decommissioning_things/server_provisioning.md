@@ -11,11 +11,12 @@
 
 The source code for this document is here:
 
-* https://gitlab.com/mvanwinkleias/mv_scratch_space/-/blob/master/server_provisioning/server_provisioning.md
+* https://github.com/mvanwinkleias/blog_posts/blob/master/2023-05-01-decommissioning_things/server_provisioning.md
 
-Please do not update this document.  Update the markdown, render it, and put it in this document.
+There are Markdown Comments "hidden" in this file.  If you don't see them, and you're "editing" this,
+then you're editing the wrong thing.
 
-This can be done by using the "Markdown Viewer" plugin, and copying and pasting into Drupal.
+
 
 ## Purpose
 
@@ -137,12 +138,6 @@ The firewall is IP based.
 
 All firewall rules and objects must reference an RT ticket.  This is typically done in the comments for the rules, and objects, etc.
 
-If communications outside of what is listed here are needed:
-* Trusted to untrusted is by default allowed.  This is the only default condition that can be assumed to be working on the firewall.
-* Trusted to trusted works because it doesn't traverse the firewall.
-* Untrusted to untrusted works because it doesn't traverse the firewall.
-
-then it requires a firewall rule.
 
 #### Objects
 
