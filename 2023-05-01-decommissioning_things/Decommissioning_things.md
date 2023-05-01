@@ -17,8 +17,8 @@ you suspect owns the objects.
 
 Your goal is to make this quick and easy for you to do.  Do this by:
 
-* creating an "Is this <object|rule> still in use?" ticket
-* putting it in a specific group's queue
+* creating an "Is this <object|rule> still in use?" ticket in that
+group's queue
 * annotating comments of the objects with the ticket number on (say) the firewall
 * (letting it sit)
 * "... I have a ticket and nobody responded..." or whatever
@@ -27,22 +27,21 @@ Use at your discretion; sometimes people can be bothered by a flood of these thi
 
 ## Useful Comments
 
-Let's say your rule is:
+Let's examine an example firewall rule:
 
 ```
 src: any
 dst: dord.ias.edu
 svc: 443
 action: accept
+comment: [ias.edu #9999999] Allow TCP HTTPS 443 to dord.ias.edu
 ```
 
-We try not to repeat what you'd say the rule does in the comments.  For instance:
-
-* \[ias.edu #9999999\] Allow TCP HTTPS 443 to dord.ias.edu
-
-is (IMO) not as good a comment as:
+The comment is a bit redundant and is (IMO) not as good a comment as:
 
 * \[ias.edu #9999999\] Department of Redundancy Department
+
+# Linking Tickets
 
 Our tickets are owned by groups, and are "sub-owned" by individuals.  I (try to) always get a ticket on THEIR side to reference in my tickets.
 
@@ -66,8 +65,7 @@ that would guide the author through the process:
 
 * https://github.com/mvanwinkleias/blog_posts/blob/master/2023-05-01-decommissioning_things/server_provisioning.md
 
-# Conclusion?
+# Pulling it Together
 
-
-
-
+After you've sprinkled ticket numbers everywhere you just search for the ticket number,
+or (as in our case) just searching for ```[ias.edu #999999]```
