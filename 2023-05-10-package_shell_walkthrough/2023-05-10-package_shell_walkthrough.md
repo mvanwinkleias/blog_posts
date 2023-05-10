@@ -1,6 +1,8 @@
 # Package Shell Walkthrough
 
-## Mostly How, Some Why
+## Introduction
+
+### Mostly How, Some Why
 
 I will be walking through the steps to create a project.
 
@@ -10,7 +12,7 @@ Just please trust that this is worth your time.
 
 If you're aware of something better, please tell me.
 
-## Target Audience
+### Target Audience
 
 * All programmers.
 * This will be fairly language agnostic.
@@ -19,8 +21,58 @@ You must at least be familiar with how to navigate a filesystem.
 
 # Presentation
 
-## Basic Assumptions
+## Muddling Your Way Through
+
+Why you should ALWAYS use a project template system.
+
+### A "First" Project - 1
+
+Let's say you need to write a script that does something.
+
+```bash
+#!/bin/bash
+
+printf "%s\n" "Hello!"
+```
+
+So you put it in a repo:
+
+```
+project_1/
+└── hello.sh
+```
+
+### A "First" Project - 2
+
+But, there's a problem.  You accidentally checked in some temporary files
+that your editor created.  So, you add a ```.gitignore``` file.
+
+```
+project_1/
+├── .gitignore
+└── hello.sh
+```
+
+### A "First" Project - 3
+
+
+
+## Complexity
+
+### Basic Assumptions
 
 * You live in an ecosystem.
 > ecosystem - (in general use) a complex network or interconnected system. - google
 * Ecosystems are complicated.
+
+### Complexity
+
+I like complexity, but:
+
+* Complexity can lead to problems. (Human error)
+
+### Computers Can Handle Complexity
+
+* Let the computer do the work.
+
+
