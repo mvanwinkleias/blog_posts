@@ -100,6 +100,11 @@ project_1/
 └── README.md
 ```
 
+### Repeated Organic Growth
+
+After a while "repeated organic growth" can lead to
+inconsistencies between all of your projects.
+
 ### A "First" Project - 4
 
 I could go on.  But you'll notice that a lot of work that
@@ -109,14 +114,6 @@ you originally set out to do.
 That, and everything is in the "root" of the project.
 There's no organization here.
 
-### A "First" Project - Conclusion
-
-You SHOULD use a template system.
-
-## Template Systems
-
-How should an ideal project template behave?!
-
 ### Basic Assumptions
 
 * You live in an ecosystem.
@@ -124,7 +121,7 @@ How should an ideal project template behave?!
 * Ecosystems are complicated.
 * Simply creating a script and putting it into a VCS is no longer sufficient.
 
-### Complexity
+### A "First" Project - Conclusion
 
 There are any number of tings that can go wrong
 with creating ancillary files for a project.
@@ -132,6 +129,10 @@ with creating ancillary files for a project.
 * Complexity can lead to problems. (Human error)
 * Computers Can Handle Complexity.
 * Let the computer do the work.
+
+You SHOULD use a template system.
+
+## Template Systems
 
 ### A Good Template
 
@@ -214,10 +215,6 @@ Then you're on your way.
 
 ## Let's Talk Layouts
 
-### Repeated Organic Growth
-
-After a while "repeated organic growth" can lead to
-inconsistencies between all of your projects.
 
 ### Just Put Things In The Right Place
 
@@ -256,22 +253,29 @@ knowing what purpose those files serve.
 * ```src/bin/``` - Stuff you run
 * ```src/lib/``` - Libraries
 * ```src/etc/``` - Project level configuration
-* ```src/root_etc``` - "Root" level configuration
+* ```src/root_etc/``` - "Root" level configuration
 
-### ```src/lib```
+#### ```src/lib```
 
 * These files are installed into ```/opt/IAS/lib``` .
 * They must not conflict with other installed libaries.
 
-### ```src/etc/```
+#### ```src/etc/```
 
 * These files are installed into ```/opt/IAS/etc/project-name``` .
 
 For RPM based systems, they are set to config replace.
 
-### ```src/root_etc```
+#### ```src/root_etc/```
 
 * These files are installed into ```/etc/```
 
 For RPM based systems, they are set to config no-replace.
+
+#### The ```src``` Directory - Conclusion
+
+There are other directories that can be created
+and things "automatically" happen.
+
+Those might not be covered in this presentation.
 
