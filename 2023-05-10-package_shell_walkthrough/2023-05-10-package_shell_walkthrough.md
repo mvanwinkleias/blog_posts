@@ -34,6 +34,11 @@ Let's say you have a simple script.  You might not be interested in:
 * 99% of the work has been done for you.
 * Just put files in the right place.
 
+### Elevator Pitch - 4
+
+If you have absolutely no interest in leveling up,
+you don't need to be here.
+
 ### Mostly How, Some Why
 
 I will be walking through the steps to create a project.
@@ -46,8 +51,7 @@ If you're aware of something better, please tell me.
 
 ### Target Audience
 
-* All programmers.
-* This will be fairly language agnostic.
+* All programmers (who care)
 
 You must at least be familiar with how to navigate a filesystem.
 
@@ -206,7 +210,7 @@ project_1/src/
 * Just put your scripts in ```src/bin/```
 * Check the project into git (or subversion)
 
-Then, ask for help.
+Then you're on your way.
 
 ## Let's Talk Layouts
 
