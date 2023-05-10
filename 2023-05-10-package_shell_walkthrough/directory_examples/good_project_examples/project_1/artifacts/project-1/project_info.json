@@ -1,0 +1,13 @@
+{
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "summary" : "Example project",
+   "AUTOMATION_USER" : "iasnetauto",
+   "project_dir" : "project_1",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "BASE_DIR" : "/opt/IAS",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "wiki_page" : "",
+   "project_name" : "project_1",
+   "package_name" : "project-1",
+   "ticket" : ""
+}

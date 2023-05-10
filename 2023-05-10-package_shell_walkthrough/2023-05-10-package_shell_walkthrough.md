@@ -58,7 +58,7 @@ project_1/
 Now you need to add a README.md file.
 
 ```
-project_1
+project_1/
 ├── .gitignore
 ├── hello.sh
 └── README.md
@@ -86,8 +86,12 @@ How should an ideal project template behave?!
 * You live in an ecosystem.
 > ecosystem - (in general use) a complex network or interconnected system. - google
 * Ecosystems are complicated.
+* Simply creating a script and putting it into a VCS is no longer sufficient.
 
 ### Complexity
+
+There are any number of tings that can go wrong
+with creating ancillary files for a project.
 
 * Complexity can lead to problems. (Human error)
 * Computers Can Handle Complexity.
@@ -101,4 +105,36 @@ A good template should:
 * have clear definitions for where files go
 * Work out of the box
 
+## Getting Stuff Done
 
+Without further ado, let's get in to how to actually
+get stuff done.
+
+### Creating a Project
+
+* Run ```ias_package_shell.pl``` .
+* Answer questions.
+* Profit.
+
+```
+$ ias_package_shell.pl 
+####################
+#   Project Name: 
+Contains only letters, numbers and underscores.  Required.
+Enter Response: project_1
+####################
+#   Summary: 
+Short description of project.  Required.
+Enter Response: Example project
+####################
+#   Wiki page: 
+External documentation.
+Enter Response: 
+####################
+#   Ticket: 
+Link to ticket, or ticket ID
+Enter Response: 
+$
+```
+
+### What You Get

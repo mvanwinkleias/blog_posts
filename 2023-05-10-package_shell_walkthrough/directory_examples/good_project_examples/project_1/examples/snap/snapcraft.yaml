@@ -1,0 +1,23 @@
+# Build with "snapcraft" in the root of this directory.
+# Then, sudo snap install --devmode project-1_<version>_<arch>.snap
+
+name: project-1
+version: '0.1'
+summary: Example project
+description: |
+    Ticket URL: 
+    Wiki Page: 
+
+grade: stable
+confinement: devmode
+base: core18
+
+# apps:
+#     project-1_hello.sh:
+#         command: src/bin/project-1_hello.sh
+
+parts:
+    snaptest1:
+        plugin: dump
+        source: ./src
+
