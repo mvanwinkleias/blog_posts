@@ -55,7 +55,20 @@ project_1/
 
 ### A "First" Project - 3
 
+Now you need to add a README.md file.
 
+```
+project_1_3
+├── .gitignore
+├── hello.sh
+└── README.md
+```
+
+### A "First" Project - 4
+
+I could go on.  But you'll notice that a lot of work that
+you do with a project isn't actually related to the thing
+you originally set out to do.
 
 ## Complexity
 

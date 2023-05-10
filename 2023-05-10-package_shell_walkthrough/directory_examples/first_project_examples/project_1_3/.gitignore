@@ -1,0 +1,22 @@
+# Editors
+
+## Dia
+*.dia.autosave
+
+## Emacs
+\#*\#
+.\#*
+
+
+## Vi / Vim
+*.swp
+
+# Filesystem Artifacts
+
+## Mac
+
+.DS_Store
+
+## NFS
+
+.nfs*
