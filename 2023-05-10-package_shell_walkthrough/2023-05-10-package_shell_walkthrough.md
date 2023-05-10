@@ -2,6 +2,38 @@
 
 ## Introduction
 
+### Elevator Pitch - 1
+
+This presentation is about leveling up.
+
+The ENTIRE presentation can be summed up with:
+
+* Use a project template system.
+* Put it in git.
+* Put files in the right place.
+
+THAT'S IT.
+
+### Elevator Pitch - 2
+
+It is centered around "my" project template.
+
+So, what's with all of the "extra" stuff?
+
+Let's say you have a simple script.  You might not be interested in:
+
+* shared libraries
+* configuration files
+* generating artifacts
+
+... but why hold yourself back?
+
+### Elevator Pitch - 3
+
+* You can ignore the extra stuff.
+* 99% of the work has been done for you.
+* Just put files in the right place.
+
 ### Mostly How, Some Why
 
 I will be walking through the steps to create a project.
@@ -176,4 +208,66 @@ project_1/src/
 
 Then, ask for help.
 
+## Let's Talk Layouts
+
+### Repeated Organic Growth
+
+After a while "repeated organic growth" can lead to
+inconsistencies between all of your projects.
+
+### Just Put Things In The Right Place
+
+The solution to a layout problem is to define where
+things should go if they are to become part of
+the project.
+
+### Major Distinction
+
+The first "major" distinction in a layout should be "ancillary"
+vs "source code".
+
+### Major Distinction - Ancillary files
+
+These things can include:
+
+* ```.gitignore```
+* ```README.md```
+* Build scripts
+* License files
+* Editor configuration files
+* Tests
+
+etc
+
+### Major Distinction - Source Files
+
+Everything under the ```src``` directory
+
+### The ```src``` Directory
+
+There are pre-defined directories where if you create them
+certain things "automatically" happen, and it helps with
+knowing what purpose those files serve.
+
+* ```src/bin/``` - Stuff you run
+* ```src/lib/``` - Libraries
+* ```src/etc/``` - Project level configuration
+* ```src/root_etc``` - "Root" level configuration
+
+### ```src/lib```
+
+* These files are installed into ```/opt/IAS/lib``` .
+* They must not conflict with other installed libaries.
+
+### ```src/etc/```
+
+* These files are installed into ```/opt/IAS/etc/project-name``` .
+
+For RPM based systems, they are set to config replace.
+
+### ```src/root_etc```
+
+* These files are installed into ```/etc/```
+
+For RPM based systems, they are set to config no-replace.
 
