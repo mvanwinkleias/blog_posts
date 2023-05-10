@@ -138,3 +138,30 @@ $
 ```
 
 ### What You Get
+
+```
+project_1
+├── artifacts
+├── aspell_project.pws
+├── doc
+├── .editorconfig
+├── examples
+├── .gitignore
+├── LICENSE
+├── Makefile
+├── package_shell
+├── README.md
+├── spell_check.sh
+├── src
+└── tests
+```
+
+### But Where's My Script?!
+
+It's there:
+
+```
+project_1/src/
+└── bin
+    └── project-1_hello.sh
+```
