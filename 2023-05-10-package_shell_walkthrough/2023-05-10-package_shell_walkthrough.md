@@ -58,7 +58,7 @@ project_1/
 Now you need to add a README.md file.
 
 ```
-project_1_3
+project_1
 ├── .gitignore
 ├── hello.sh
 └── README.md
@@ -70,7 +70,13 @@ I could go on.  But you'll notice that a lot of work that
 you do with a project isn't actually related to the thing
 you originally set out to do.
 
+### A "First" Project - Conclusion
+
+You SHOULD use a template system.
+
 ## Complexity
+
+How should an ideal project template behave?!
 
 ### Basic Assumptions
 
@@ -80,11 +86,9 @@ you originally set out to do.
 
 ### Complexity
 
-I like complexity, but:
-
 * Complexity can lead to problems. (Human error)
 
-### Computers Can Handle Complexity
+Computers Can Handle Complexity.
 
 * Let the computer do the work.
 
