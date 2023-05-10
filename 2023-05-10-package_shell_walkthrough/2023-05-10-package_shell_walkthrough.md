@@ -21,7 +21,7 @@ You must at least be familiar with how to navigate a filesystem.
 
 # Presentation
 
-## Muddling Your Way Through
+## Muddling Your Way Through - A BIG "Why"
 
 Why you should ALWAYS use a project template system.
 
@@ -70,11 +70,14 @@ I could go on.  But you'll notice that a lot of work that
 you do with a project isn't actually related to the thing
 you originally set out to do.
 
+That, and everything is in the "root" of the project.
+There's no organization here.
+
 ### A "First" Project - Conclusion
 
 You SHOULD use a template system.
 
-## Complexity
+## Template Systems
 
 How should an ideal project template behave?!
 
@@ -87,9 +90,15 @@ How should an ideal project template behave?!
 ### Complexity
 
 * Complexity can lead to problems. (Human error)
-
-Computers Can Handle Complexity.
-
+* Computers Can Handle Complexity.
 * Let the computer do the work.
+
+### A Good Template
+
+A good template should:
+
+* Create (all of) the ancillary files for a project
+* have clear definitions for where files go
+* Work out of the box
 
 
