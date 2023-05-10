@@ -139,8 +139,10 @@ $
 
 ### What You Get
 
+You get a lot of things that have already been organized for you.
+
 ```
-project_1
+project_1/
 ├── artifacts
 ├── aspell_project.pws
 ├── doc
@@ -165,3 +167,13 @@ project_1/src/
 └── bin
     └── project-1_hello.sh
 ```
+
+### That's ... A Lot
+
+* You don't have to know everything.
+* Just put your scripts in ```src/bin/```
+* Check the project into git (or subversion)
+
+Then, ask for help.
+
+
