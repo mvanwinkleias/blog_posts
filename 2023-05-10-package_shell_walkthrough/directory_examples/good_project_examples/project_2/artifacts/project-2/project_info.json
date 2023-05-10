@@ -1,0 +1,13 @@
+{
+   "project_dir" : "project_2",
+   "ticket" : "",
+   "wiki_page" : "",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "summary" : "Project 2",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "package_name" : "project-2",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "BASE_DIR" : "/opt/IAS",
+   "AUTOMATION_USER" : "iasnetauto",
+   "project_name" : "project_2"
+}
