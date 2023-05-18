@@ -279,3 +279,21 @@ and things "automatically" happen.
 
 Those might not be covered in this presentation.
 
+## Examples
+
+### Simple Project 2
+
+After running package shell, and creating some files,
+here's what the ```src``` dir looks like:
+
+```
+project_2/src/
+├── bin
+│   └── project-2_hello.sh
+├── etc
+│   └── some_project_config.txt
+└── root_etc
+    └── some_root_config.txt
+```
+
+
