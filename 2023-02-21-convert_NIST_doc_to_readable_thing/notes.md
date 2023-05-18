@@ -207,15 +207,17 @@ Make the software.
 templates.
 * Audit other people's stuff
 
-### PW.5: Follow Best Practices for Secure Code
+### PW.5: Follow Best Practices for Creating Secure Code
 
 ### PW.6: Enable warnings!
+
+Get stuff to tell you what's wrong while you're making software.
 
 ### PW.7: Do code reviews
 
 ### PW.8: Test the product
 
-But like, with "security".
+But like, for "security".
 
 ### Pw.9: Default Settings Should Be Secure
 
