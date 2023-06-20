@@ -58,3 +58,17 @@ Add the key to the volume:
 cryptsetup luksAddKey /dev/sdb1 /root/mount_secrets/encrypted_volume
 ```
 
+## Put libvirt stuff on a larger volume:
+
+```
+/var/lib/libvirt/images/ -> /opt/root/lib/libvirt/images
+```
+
+## Squid Proxy Server
+
+```
+# there's something to allow localnet which you need
+# to do as well
+# test with curl --proxy http://<proxy_host>:3128
+cache_dir ufs /var/spool/squid 25000 16 256
+```
