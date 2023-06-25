@@ -82,10 +82,11 @@ so stuff will be faster later.
 
 ### Squid Proxy Server
 
+* /etc/squid/squid.conf
+
 ```
-# there's something to allow localnet which you need
-# to do as well
 # test with curl --proxy http://<proxy_host>:3128
+http_access allow localnet
 cache_dir ufs /var/spool/squid 25000 16 256
 ```
 
@@ -121,4 +122,8 @@ address 192.168.122.11
 netmask 255.255.255.0
 gateway 192.168.122.1
 dns-nameservers 192.168.122.1
+```
+
+```
+service networking restart
 ```
