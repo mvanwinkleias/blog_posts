@@ -36,6 +36,19 @@ cryptsetup luksAddKey /dev/sdb1 /root/mount_secrets/encrypted_volume
 
 ## virt-manager
 
+### Verify
+
+> Your system needs to have an Intel VT-x (vmx) processor or AMD-V (svm) processor.
+
+```
+egrep -c '(vmx|svm)' /proc/cpuinfo
+```
+
+```
+apt-get install -y cpu-checker
+kvm-ok
+```
+
 ### Install stuff
 
 ```
