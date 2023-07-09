@@ -73,5 +73,20 @@ them.
 
 For example:
 ```
+git_cloner.sh git@github.com-mvanwinkleias:theias/ias_package_shell.git
+```
+
+clones to:
 
 ```
+~/src/git/github.com-mvanwinkleias/theias/ias_package_shell
+```
+
+## Conclusion
+
+The collection of configurations and scripts that I use allow
+you to:
+
+* have multiple accounts on multiple forges
+* organize your code
+* choose "default" accounts for each forge
