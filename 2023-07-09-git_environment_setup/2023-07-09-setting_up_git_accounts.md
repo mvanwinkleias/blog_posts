@@ -82,6 +82,33 @@ clones to:
 ~/src/git/github.com-mvanwinkleias/theias/ias_package_shell
 ```
 
+## Benefits
+
+### Collison-free
+
+I think this is the best way to organize your code.  I don't think
+it's possible to have "collisions".
+
+### Other Automation
+
+I use 2 scripts together:
+
+* [git_repos_in_this_dir.sh](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_repos_in_this_dir.sh) - lists the direcories under a directory that are git repositories.
+* [git_puller.sh](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_puller.sh) - Runs ```git pull``` on a directory
+
+```
+git_repos_in_this_dir.sh | xargs -n1 git_puller.sh -v
+```
+
+```
+----- Pulling: /home/mvanwinkle/src/git/github.com/mvanwinkleias/mv_git_repo_utils
+Already up to date.
+----- Pulling: /home/mvanwinkle/src/git/github.com/mvanwinkleias/mv_tmux_vi_zen
+Already up to date.
+----- Pulling: /home/mvanwinkle/src/git/github.com/mvanwinkleias/mv_c_package_template_test
+Already up to date.
+```
+
 ## Conclusion
 
 The collection of configurations and scripts that I use allow
