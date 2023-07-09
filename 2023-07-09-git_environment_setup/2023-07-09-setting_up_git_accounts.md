@@ -15,7 +15,7 @@ with those accounts.
 ## ~/src/git layout
 
 One of the first things I do when I'm bootstraping a git environment
-is make a directory structure like this, sometimes using symbolic
+is make a directory structure like this.  Sometimes I use symbolic
 links to specify which SSH identity should be used by default for
 that forge.
 
