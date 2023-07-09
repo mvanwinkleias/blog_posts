@@ -5,7 +5,8 @@ I have multiple users with multiple Git forges:
 * [GitHub](https://github.com):
 	* [mvanwinkleias](https://github.com/mvanwinkleias) (work)
 	* [mvanwinkle](https://github.com/mvanwinkle) (personal)
-* [GitLab](https://gitlab.com): [mvanwinkleias](https://gitlab.com/mvanwinkleias) (work)
+* [GitLab](https://gitlab.com):
+	* [mvanwinkleias](https://gitlab.com/mvanwinkleias) (work)
 
 It could be difficult to keep track of all of those, but
 I have some tools and processes around managing code associated
@@ -38,8 +39,7 @@ The SSH config is an example from one of my personal machines I do work on.
 ```
 # If I'm coding on a personal machine, then the "original"
 # domain name gets an entry for itself using the key for my
-# personal account
-
+# personal account:
 host github.com
  HostName github.com
   IdentityFile ~/.ssh/id_rsa_github-mvanwinkle
@@ -50,6 +50,7 @@ host github.com-mvanwinkle
   IdentityFile ~/.ssh/id_rsa_github-mvanwinkle
   User mvanwinkle
 
+# This account is for my work at ias.edu
 host github.com-mvanwinkleias
  HostName github.com
   IdentityFile ~/.ssh/id_rsa_github-mvanwinkleias
