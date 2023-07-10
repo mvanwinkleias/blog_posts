@@ -139,6 +139,8 @@ git_repos_in_this_dir.sh ~/backups/src | xargs -n1 git_puller.sh -v
 
 ## "Advanced"
 
+### Automatic Bootstrapping
+
 When I start off from scratch I do this:
 
 ```
@@ -157,6 +159,7 @@ ln -s ../src/git/github.com/mvanwinkleias/mv_git_repo_utils/src/bin/git_cloner.s
 ```
 
 Having things standardized like this across machines / accounts helps a lot with work.
+
 
 ## Conclusion
 
