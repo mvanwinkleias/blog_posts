@@ -142,11 +142,21 @@ git_repos_in_this_dir.sh ~/backups/src | xargs -n1 git_puller.sh -v
 When I start off from scratch I do this:
 
 ```
-mkdir ~/bin
+# Check out the repo tools somewhere out of the way
 mkdir ~/exports
 cd ~/exports
 git clone git@github.com:mvanwinkleias/mv_git_repo_utils.git
+
+# Check out the repo tools where the repo tools think they should go
+mv_git_repo_utils/src/bin/git_cloner.sh git@github.com:mvanwinkleias/mv_git_repo_utils.git
+
+# Use a relative symbolic link to "install" it:
+mkdir ~/bin
+cd ~/bin
+ln -s ../src/git/github.com/mvanwinkleias/mv_git_repo_utils/src/bin/git_cloner.sh
 ```
+
+Having things standardized like this across machines / accounts helps a lot with work.
 
 ## Conclusion
 
