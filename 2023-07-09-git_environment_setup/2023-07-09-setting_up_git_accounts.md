@@ -12,6 +12,12 @@ It could be difficult to keep track of all of those, but
 I have some tools and processes around managing code associated
 with those accounts.
 
+It comprises of 3 basic things that work together:
+
+* A filesystem layout
+* An SSH config file
+* A script that checks things out into "the right place".
+
 ## ~/src/git layout
 
 One of the first things I do when I'm bootstraping a git environment
@@ -89,6 +95,11 @@ clones to:
 ```
 
 ## Benefits
+
+### Automatic Standardization
+
+The code I check out to my home directory is always checked out
+consistently across devices.
 
 ### Collison-free
 
