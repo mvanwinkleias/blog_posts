@@ -137,6 +137,17 @@ git_cloner.sh (project I want to back up)
 git_repos_in_this_dir.sh ~/backups/src | xargs -n1 git_puller.sh -v
 ```
 
+## "Advanced"
+
+When I start off from scratch I do this:
+
+```
+mkdir ~/bin
+mkdir ~/exports
+cd ~/exports
+git clone git@github.com:mvanwinkleias/mv_git_repo_utils
+
+
 ## Conclusion
 
 The collection of configurations and scripts that I use allow
@@ -145,3 +156,5 @@ you to:
 * have multiple accounts on multiple forges
 * organize your code
 * choose "default" accounts for each forge
+
+
