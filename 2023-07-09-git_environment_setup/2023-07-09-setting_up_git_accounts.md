@@ -145,7 +145,7 @@ When I start off from scratch I do this:
 mkdir ~/bin
 mkdir ~/exports
 cd ~/exports
-git clone git@github.com:mvanwinkleias/mv_git_repo_utils
+git clone git@github.com:mvanwinkleias/mv_git_repo_utils.git
 ```
 
 ## Conclusion
