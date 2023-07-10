@@ -27,6 +27,11 @@ that forge.
 └── gitlab.com # I only have one account on gitlab, so this is just a plain directory
 ```
 
+* github.com - a symbolic link to github.com-mvanwinkleias 
+* github.com-mvanwinkle - the directory where personal stuff gets checked out
+* github.com-mvanwinkleias - the directory where work stuff gets checked out
+* gitlab.com - I only have one account on gitlab, so this is just a plain directory
+
 ## ~/.ssh/config
 
 This is nothing spectacular or new: use your SSH config
@@ -90,14 +95,17 @@ clones to:
 I think this is the best way to organize your code.  I don't think
 it's possible to have "collisions".
 
-### Other Automation
+### "Automating" Git Pulls
 
 I use 2 scripts together:
 
 * [git_repos_in_this_dir.sh](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_repos_in_this_dir.sh) - lists the direcories under a directory that are git repositories.
 * [git_puller.sh](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_puller.sh) - Runs ```git pull``` on a directory
 
+This means that if I have all of my git repos under ```~/src/git``` , I can get updates by doing:
+
 ```
+cd ~/src/git
 git_repos_in_this_dir.sh | xargs -n1 git_puller.sh -v
 ```
 
@@ -108,6 +116,25 @@ Already up to date.
 Already up to date.
 ----- Pulling: /home/mvanwinkle/src/git/github.com/mvanwinkleias/mv_c_package_template_test
 Already up to date.
+```
+
+### Backups
+
+I keep the repositories I want to back up (to, say, DVDs) in a different
+directory than I keep the repositories I'm working on.
+
+This prevents backing up things like transient files that were put
+in the original project directories.
+
+```
+export src_base_dir="$HOME"/backups/src
+mkdir -p "$src_base_dir"
+git_cloner.sh (project I want to back up)
+```
+
+
+```
+git_repos_in_this_dir.sh ~/backups/src | xargs -n1 git_puller.sh -v
 ```
 
 ## Conclusion
