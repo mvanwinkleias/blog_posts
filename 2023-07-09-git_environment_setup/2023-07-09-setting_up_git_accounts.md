@@ -146,7 +146,7 @@ mkdir ~/bin
 mkdir ~/exports
 cd ~/exports
 git clone git@github.com:mvanwinkleias/mv_git_repo_utils
-
+```
 
 ## Conclusion
 
