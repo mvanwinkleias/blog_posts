@@ -22,15 +22,15 @@ that forge.
 ```
 ~/src/git
 ├── github.com 
-├── github.com
-├── github.com
+├── github.com-mvanwinkle
+├── github.com-mvanwinkleias
 └── gitlab.com
 ```
 
 * github.com - a symbolic link to github.com-mvanwinkleias 
 * github.com-mvanwinkle - the directory where personal stuff gets checked out
 * github.com-mvanwinkleias - the directory where work stuff gets checked out
-* gitlab.com - I only have one account on gitlab, so this is just a plain directory
+* gitlab.com - I only have one account on gitlab; so there's no need to differentiate accounts
 
 ## ~/.ssh/config
 
