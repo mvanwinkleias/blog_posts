@@ -103,6 +103,48 @@ http_access allow localnet
 cache_dir ufs /var/spool/squid 25000 16 256
 ```
 
+## VNC
+
+### Server
+
+Packages:
+
+```
+tigervnc-standalone-server
+```
+
+Config:
+
+```
+vncpasswd
+```
+
+Server:
+
+```
+vncserver -localhost no
+```
+
+### Client
+
+Packages:
+
+```
+tigervnc-viewer
+```
+
+SSH Tunnel:
+
+```
+ssh -L localhost:55555:192.168.122.160:5901 user@vmhost
+```
+
+Viewer:
+
+```
+xtigervncviewer localhost::55555
+```
+
 ## System Config Notes
 
 ### Ubuntu Server
@@ -140,3 +182,5 @@ dns-nameservers 192.168.122.1
 ```
 service networking restart
 ```
+
+
