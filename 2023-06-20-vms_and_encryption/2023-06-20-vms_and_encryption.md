@@ -183,4 +183,18 @@ dns-nameservers 192.168.122.1
 service networking restart
 ```
 
+#### Useful Client Packages
+
+```
+wireshark
+```
+
+#### Useful Server Packages
+
+```
+net-tools
+openssh-server
+fail2ban
+```
+
 
