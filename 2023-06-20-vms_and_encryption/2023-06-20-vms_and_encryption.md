@@ -198,6 +198,13 @@ service networking restart
 
 ```
 wireshark
+tcpdump
+tmux
+nmap
+gdebi
+pavucontrol
+openssh-server
+fail2ban
 ```
 
 #### Useful Server Packages
@@ -208,4 +215,15 @@ openssh-server
 fail2ban
 ```
 
+#### Test user stuff
 
+```
+echo "DenyUsers test" >  /etc/ssh/sshd_config.d/deny_test_user.conf
+```
+
+### Centos Stream 9
+
+```
+yum install epel-release
+yum install fail2ban
+```
