@@ -83,6 +83,14 @@ Edit -> Preferences -> Enable XML exiting
 
 Edit the default network to start distributing IPs at 128.
 
+### Accessing virt-manager remotely (sound works!)
+
+Set up authorized keys.
+
+```
+virt-manager -c 'qemu+ssh://user@192.168.1.11/system'
+```
+
 ## Virtual Machines
 
 Simple stuff to get started.  Maybe set up the proxy first
