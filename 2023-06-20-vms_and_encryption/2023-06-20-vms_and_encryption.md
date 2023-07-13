@@ -167,6 +167,9 @@ network:
           via: 192.168.1.1
 ```
 
+```
+sudo netplan apply
+```
 ### Debian
 
 #### Static Networking
