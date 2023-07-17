@@ -35,7 +35,13 @@ Once it's built:
 * do a dist-upgrade on it,
 and watch the proxy logs to make sure it's being used.
 
+Only turn it on to upgrade it, or to install default packages
+you think are useful for the rest of the builds.
 
+Because the rest of the builds will use the caching proxy,
+you can err on the side of not installing the tools on the
+base install, and have a list of packages you like to have
+installed after the machine is cloned.
 
 # Relevant Sequences
 
@@ -124,7 +130,7 @@ Set up authorized keys.
 virt-manager -c 'qemu+ssh://user@192.168.1.11/system'
 ```
 
-## Virtual Machines
+## Virtual Machines, Sample Network Layout
 
 Simple stuff to get started.  Maybe set up the proxy first
 so stuff will be faster later.
