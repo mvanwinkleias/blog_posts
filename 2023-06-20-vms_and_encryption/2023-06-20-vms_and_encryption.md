@@ -236,3 +236,12 @@ echo "DenyUsers test" >  /etc/ssh/sshd_config.d/deny_test_user.conf
 yum install epel-release
 yum install fail2ban
 ```
+
+## apt proxy configuration
+
+```/etc/apt/apt.conf.d```:
+
+```
+Acquire::http::Proxy "http://192.168.122.11:3128/";
+Acquire::https::Proxy "http://192.168.122.11:3128/";
+```
