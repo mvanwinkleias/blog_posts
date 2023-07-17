@@ -3,6 +3,7 @@
 * https://www.tecmint.com/install-qemu-kvm-ubuntu-create-virtual-machines/
 * https://www.golinuxcloud.com/mount-luks-encrypted-disk-partition-linux/
 * https://linuxhint.com/uuid_storage_devices_linux/
+* https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
 
 # Relevant Sequences
 
@@ -177,6 +178,14 @@ network:
 
 ```
 sudo netplan apply
+```
+
+#### Extending The Default Partition
+
+```
+lvdisplay
+lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+lvdisplay
 ```
 ### Debian
 
