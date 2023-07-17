@@ -5,6 +5,38 @@
 * https://linuxhint.com/uuid_storage_devices_linux/
 * https://packetpushers.net/ubuntu-extend-your-default-lvm-space/
 
+# Setting Up A Lab Environment
+
+## Acquire ISOS
+
+Download a bunch of them somehow
+
+## Setup a proxy
+
+First thing I recommend is setting up a debian VM
+with squid installed as a proxy.
+
+## Set up a "work" VM
+
+This is going to be reasonably sized so you can get work
+done on it, and maybe use it as a recon box.
+
+Build an lubuntu VM.
+
+I name it ```lubuntu-2204-base-01```
+
+You don't seem to be able to
+build it and use the proxy at the same time.
+
+Once it's built:
+* Make the screen saver just blank
+	* Preferences -> Screen Saver -> Mode -> Blank Screen Only
+* configure apt to use the proxy machine
+* do a dist-upgrade on it,
+and watch the proxy logs to make sure it's being used.
+
+
+
 # Relevant Sequences
 
 ## Automount Cryptvolumes
