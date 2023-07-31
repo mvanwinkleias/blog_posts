@@ -18,6 +18,10 @@ was overly difficult to get through, then this talk is for you.
 
 This presentation and materials can be found [here](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/notes.md)
 
+### The NIST SSDF
+
+> The Secure Software Development Framework (SSDF) is a set of fundamental, sound, and secure software development practices based on established secure software development practice documents from organizations such as BSA, OWASP, and SAFECode.  - [Secure Software Development Framework (SSDF)](https://csrc.nist.gov/Projects/ssdf)
+
 ### Why This Presentation
 
 * I can't read the [NIST SP 800-218 document](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
