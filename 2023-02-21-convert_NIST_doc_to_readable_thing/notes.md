@@ -2,10 +2,13 @@
 
 ## Abstract
 
-NIST's Secure Software Development Framework is illegible.
-I wrote a script that fixes that.  Then I read through it and figured
-lots of people could benefit from the work, and a summary.  I include
-advice for getting started that aligns with the SSDF.
+I have found that NIST's Secure Software Development Framework is illegible.
+
+I wrote a script that fixes that.
+
+I read through the SSDF and I figured that lots of people could benefit from the work, and a summary.
+
+I include advice for getting started that aligns with the SSDF.
 
 If you're a big shop or a small shop and you want to tighten the
 security in your Software Development system, and the NIST SSDF
@@ -13,9 +16,11 @@ was overly difficult to get through, then this talk is for you.
 
 ## Intro
 
-[//]: # (TODO: Change presentation link)
+This presentation and materials can be found [here](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/notes.md)
 
-This presentation can be found [here](https://github.com/mvanwinkleias/blog_posts/)
+### The NIST SSDF
+
+> The Secure Software Development Framework (SSDF) is a set of fundamental, sound, and secure software development practices based on established secure software development practice documents from organizations such as BSA, OWASP, and SAFECode.  - [Secure Software Development Framework (SSDF)](https://csrc.nist.gov/Projects/ssdf)
 
 ### Why This Presentation
 
@@ -24,11 +29,16 @@ This presentation can be found [here](https://github.com/mvanwinkleias/blog_post
 
 > I can't read the NIST SSDF document or the spreadsheet.
 > It's not provided in a good format.
+> This is a soft introduction to the SSDF, with my simplifcations in-line, and 
+> references that allow you to go back to the SSDF.
 
 #### I CAN Read These:
 
 * [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
 * [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
+
+> I am able to read the output from my script.
+> If you are new, then the "Practices Only" version is what I would recommend.
 
 #### Audience
 
@@ -78,14 +88,10 @@ All of these tidbits of information end up relating to the SSDF
 (Secure Software Development Framework).
 
 
-<<<<<<< HEAD
 ### Projects in Revision Control
 
 > I had to stop myself from turning this into a git tutorial.
 > The ability to effectively use revision control is paramount.
-=======
-### Revision control systems / projects
->>>>>>> 626502048a00a9dedc716d523dd40e5a078a55f1
 
 Learn basic git interaction.  You don't need to be a wizzard.
 
@@ -94,21 +100,12 @@ Learn basic git interaction.  You don't need to be a wizzard.
 > clone, add, commit, push, pull, tag.
 > You don't need to be a wizzard.
 
-<<<<<<< HEAD
 #### Put your code in a repo
-=======
-#### Don't commit credentials / sensitive information
-
-Learn how to refer to credentials that are located outside
-of the project directory.
-
-#### Put your code in a revision control system
->>>>>>> 626502048a00a9dedc716d523dd40e5a078a55f1
 
 * Can be hosted on a forge (gitlab, github)
 * Can be hosted locally 
 
-> Put your code in a revision control system.
+> Put your code in a repo.
 > If you don't know how to do this locally then...
 
 #### Get a Private Forge Account
@@ -205,7 +202,12 @@ If, when you're writing software, your actions prevent or make following
 
 # SSDF Notes:
 
+> Now that we're here, a lot of it is straight-forward.
+> But, what to do, and tying it back is what I'm going to point out.
+
 ## PO: Prepare the Organization
+
+[//]: # (PO.1 and PO.2 go in same slide)
 
 ### PO.1: Make the Organization aware.
 
@@ -219,11 +221,15 @@ Create, maintain, and communicate the policy and requirements for:
 * Prepare, assign, delegate, etc.
 * Obtain commitment from management.
 
+[//]: # (Own slide)
+
 ### PO.3: Reduce repeat work and Document
 
 * Use project template systems. i.e. [Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/)
 * Use automation.  (I have a rant about this...)
 	* Have an audit trail
+
+[//]: # (Own slide:)
 
 ### PO.4: Perform Software Security Audits.
 
@@ -232,9 +238,20 @@ Example:
 * OWASP Application Security Verification Standard
 	* https://owasp.org/www-project-application-security-verification-standard/
 
+> Modular code is SO important for this.  The more modular your code is
+> the easier it is to isolate and analyze change,
+> therefore making it more auditable
+
+[//]: # (Tie this back to using Git / software repos securely)
+
 ### PO.5 Implement, Maintain, and Secure Your environments.
 
 Make the environment.
+
+> LOL.  Just do it?
+
+> I recommend coming up with a migration plan for getting code
+> into repositories.
 
 ## PS: Protect the Software
 
@@ -242,7 +259,12 @@ Make the environment.
 
 Taken straight from the practice name.
 
+> Get this into a secure repo.
+
 ### PS.2: Make verification easy
+
+> Write modular code.
+> Track dependencies.
 
 ### PS.3: Archive and Protect Each Software Release
 
@@ -260,10 +282,15 @@ Make the software.
 * Reconcile
 * Integrate with existing infrastructure (logging, IAM, etc)
 
+> Everything's important, but focus on what I said about writing secure code
+> above.
+
 ### PW.2: Audit and Review
 
 * Reconcile with PO.4 (Perform Security audits).
 * Code Reviews
+
+> Doing the things above makes this easier.
 
 ### PW.4: Do What PO.3 (Reduce repeat work) Says.
 
