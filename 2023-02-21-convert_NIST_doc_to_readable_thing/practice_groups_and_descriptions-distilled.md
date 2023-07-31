@@ -4,10 +4,10 @@ All of these pertain to secure software development.
 
 ### Prepare the Organization (PO)
 
-* PO.1 - Define requirements
-* PO.2 - Implement roles and responsibilities
-* PO.3 - Implement toolchains
-* PO.4 - Define and use criteria for checks
+* PO.1 - Define Requirements
+* PO.2 - Implement Roles and Responsibilities
+* PO.3 - Implement Toolchains
+* PO.4 - Define and Use Criteria for Checks
 * PO.5 - Implement and Maintain Environments
 
 ### Protect the Software (PS)
@@ -16,7 +16,7 @@ All of these pertain to secure software development.
 * PS.2 - Integrity Verification
 * PS.3 - Archive and Protect Each Software Release
 
-### Produce Software
+### Produce Software (PW)
 
 * PW.1 - Design
 * PW.2 - Review Design
