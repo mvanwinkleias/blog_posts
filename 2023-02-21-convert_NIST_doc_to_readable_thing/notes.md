@@ -78,10 +78,14 @@ All of these tidbits of information end up relating to the SSDF
 (Secure Software Development Framework).
 
 
+<<<<<<< HEAD
 ### Projects in Revision Control
 
 > I had to stop myself from turning this into a git tutorial.
 > The ability to effectively use revision control is paramount.
+=======
+### Revision control systems / projects
+>>>>>>> 626502048a00a9dedc716d523dd40e5a078a55f1
 
 Learn basic git interaction.  You don't need to be a wizzard.
 
@@ -90,12 +94,21 @@ Learn basic git interaction.  You don't need to be a wizzard.
 > clone, add, commit, push, pull, tag.
 > You don't need to be a wizzard.
 
+<<<<<<< HEAD
 #### Put your code in a repo
+=======
+#### Don't commit credentials / sensitive information
+
+Learn how to refer to credentials that are located outside
+of the project directory.
+
+#### Put your code in a revision control system
+>>>>>>> 626502048a00a9dedc716d523dd40e5a078a55f1
 
 * Can be hosted on a forge (gitlab, github)
 * Can be hosted locally 
 
-> Put your code in a repo.
+> Put your code in a revision control system.
 > If you don't know how to do this locally then...
 
 #### Get a Private Forge Account
