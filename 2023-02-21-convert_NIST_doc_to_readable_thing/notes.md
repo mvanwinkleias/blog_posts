@@ -6,17 +6,24 @@ I have found that NIST's Secure Software Development Framework is illegible.
 
 I wrote a script that fixes that.
 
-I read through the SSDF and I figured that lots of people could benefit from the work, and a summary.
+Then I read through the SSDF and I figured that lots of people could benefit from the work, and a summary.
 
 I include advice for getting started that aligns with the SSDF.
 
 If you're a big shop or a small shop and you want to tighten the
 security in your Software Development system, and the NIST SSDF
-was overly difficult to get through, then this talk is for you.
+was overly difficult to read through, then this talk is for you.
+
+I am not the originator of a lot of this material.  NIST is.  I'm just "distilling" it.
 
 ## Intro
 
 This presentation and materials can be found [here](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/notes.md)
+
+### About NIST
+> The National Institute of Standards and Technology (NIST) was founded in 1901 and is now part of the U.S. Department of Commerce. NIST is one of the nation's oldest physical science laboratories. - https://www.nist.gov/about-nist
+
+> Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. - https://www.nist.gov/about-nist
 
 ### The NIST SSDF
 
@@ -34,7 +41,7 @@ This presentation and materials can be found [here](https://github.com/mvanwinkl
 
 #### I CAN Read These:
 
-* [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
+* [Practices Only](NIST.SP.800-218.SSDF-table-practices_only.md)
 * [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
 
 > I am able to read the output from my script.
@@ -42,10 +49,12 @@ This presentation and materials can be found [here](https://github.com/mvanwinkl
 
 #### Audience
 
-People who program.  The SSDF is something EVERYBODY who interacts with
+* Main audience: People who program.  The SSDF is something EVERYBODY who interacts with
 source code should keep in mind.
 
-I recommend you read through a "textual" version of the SSDF.
+* People who manage people who wrote programs should be aware of the practice groups,
+and the individual practices.
+
 
 > Saying this presentation is for "programmers" might leave people out.
 > If you write any code that is used at your organization that might
@@ -73,6 +82,10 @@ I recommend you read through a "textual" version of the SSDF.
 ## Disclaimer
 
 * This presentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+## Documentation Roadmap
+
+* [Practice Groups and Descriptions](practice_groups_and_descriptions.md) - IMO, this should be the first thing you read.
 
 ## From the Ground Up...
 
