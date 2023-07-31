@@ -13,7 +13,11 @@ was overly difficult to get through, then this talk is for you.
 
 ## Intro
 
-### Why this Presentation
+[//]: # (TODO: Change presentation link)
+
+This presentation can be found [here](https://github.com/mvanwinkleias/blog_posts/)
+
+### Why This Presentation
 
 * I can't read the [NIST SP 800-218 document](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
 * I can't read the [corresponding spreadsheet](https://csrc.nist.gov/csrc/media/Publications/sp/800-218/final/documents/NIST.SP.800-218.SSDF-table.xlsx).
@@ -21,10 +25,23 @@ was overly difficult to get through, then this talk is for you.
 > I can't read the NIST SSDF document or the spreadsheet.
 > It's not provided in a good format.
 
-### I CAN Read These:
+#### I CAN Read These:
 
 * [Practices Only](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table-practices_only.md)
 * [Entire thing in Markdown](https://github.com/mvanwinkleias/blog_posts/blob/master/2023-02-21-convert_NIST_doc_to_readable_thing/NIST.SP.800-218.SSDF-table.md)
+
+#### Audience
+
+People who program.  The SSDF is something EVERYBODY who interacts with
+source code should keep in mind.
+
+I recommend you read through a "textual" version of the SSDF.
+
+> Saying this presentation is for "programmers" might leave people out.
+> If you write any code that is used at your organization that might
+> be reused, and you don't put your code in a revision control system
+> please at least stay through the section on Source Repositories
+> / Revision Control.
 
 ### About Me
 
@@ -36,48 +53,47 @@ was overly difficult to get through, then this talk is for you.
 > I'd like to think my software development practices are secure,
 > and I was interested in reconciling them with the SSDF.
 
-### Small Places (About Me, continued)
-
-* I work at a relatively small place.
-* I've worked at big places.
-* I've seen how things scale.
-* I've seen things do not scale.
+* I work at a relatively small place and I've worked at big places.
+* I've seen how things scale and not scale.
 * I like applying techniques and processes that help get things done.
+
 * I know that resources are always going to be constrained.
 * I want people to beneficially level up.
 
+## Disclaimer
+
+* This presentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 ## From the Ground Up...
+
+> Dedicate 5 minutes to list specific / actionable tools / skills
+
+[//]: # (Everything should have a link or something to search for, but preferably a link)
+ 
+> All of this advice relates to the SSDF.
 
 If you're just starting out, here's what I would focus on.
 
 All of these tidbits of information end up relating to the SSDF
 (Secure Software Development Framework).
 
-> I realize that my audience will contain inexperienced people at small
-> places.  So, in this talk I'll include a brief, but (hopefully)
-> informative rant on what I'd start looking at, instead of diving
-> right in to a framework.
->
-> All of this advice relates to the SSDF.
 
-### Repos
+### Projects in Revision Control
+
+> I had to stop myself from turning this into a git tutorial.
+> The ability to effectively use revision control is paramount.
 
 Learn basic git interaction.  You don't need to be a wizzard.
 
+> Single biggest hurdle to your advancement as a programmer is revision control
 > Learn basic git interaction.  It's ubiquitous now.  You should be able to
 > clone, add, commit, push, pull, tag.
 > You don't need to be a wizzard.
 
-#### Don't commit credentials / sensitive information
-
-Learn how to refer to credentials that are located outside
-of the source repository.
-
 #### Put your code in a repo
 
-* Can be hosted locally (work...)
 * Can be hosted on a forge (gitlab, github)
+* Can be hosted locally 
 
 > Put your code in a repo.
 > If you don't know how to do this locally then...
@@ -93,7 +109,7 @@ Learning basic interaction with these services is crucial:
 
 #### Use It Securely
 
-* Use a secure passphrase, 2FA
+* Use a secure passphrase, 2FA for your account
 * Use separate ssh keys for separate machines
 * Manage permissions appropriately
 
@@ -101,14 +117,50 @@ Learning basic interaction with these services is crucial:
 > Use different SSH keys for different machines
 > Make sure you understand permissions and how to manage them.
 
+#### Start off organized!
+
+Use
+ 
+* a good project layout.  [Repo Layout Demo](https://github.com/mvanwinkleias/repo_layout_demo1)
+* a good .gitignore
+
+```
+project_1/
+├── doc
+│   └── index.md
+├── Makefile
+├── README.md
+└── src
+    └── bin
+        └── project-1.sh
+```
+
+Good project layouts help you write modular code.
+
+#### Don't commit credentials / sensitive information
+
+* Keep credentials away!!!
+
+* Learn how to refer to credentials that are located outside
+of the source repository.
+
+[Example Code](https://github.com/mvanwinkleias/repo_layout_demo1/tree/master/src/snippits/load_credentials_from_json_file_in_home_directory)
+
 #### Back It Up
 
 Keep archived copies of your software.
 
+* [List git repos in this directory](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_repos_in_this_dir.sh)
+* [Git Puller](https://github.com/mvanwinkleias/mv_git_repo_utils/blob/master/src/bin/git_puller.sh) - Just cd's to something and pulls
+
 > Cron up a script that runs git pull, or whatever.  Back that up.
 
 
-### Practices
+### Coding Practices
+
+These relate to the SSDF.
+
+#### Fail Safely
 
 #### Sanitize Inputs
 
