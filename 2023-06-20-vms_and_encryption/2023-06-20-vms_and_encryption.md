@@ -223,6 +223,7 @@ sudo netplan apply
 ```
 lvdisplay
 lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv 
 lvdisplay
 ```
 ### Debian
