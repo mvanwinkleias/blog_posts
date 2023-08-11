@@ -1,17 +1,39 @@
 <?php
 
+// Load credentials from a file in your home directory
+// Command line options:
+//     --ipam-config-file='/some/other/path.json'
+
+// COPY/PASTE (doesn't change)
+function loadJSONFromFile($filename)
+{
+	$contents = file_get_contents($filename);
+	assert(strlen($contents)>0);
+	return json_decode($contents);
+}
+
 $my_home_dir = posix_getpwnam(
-	getenv('LOGNAME') != '' ? getenv('LOGNAME')
-	: getenv('USER') != '' ? getenv('USER')
-	: null
+    getenv('LOGNAME') != '' ? getenv('LOGNAME')
+    : getenv('USER') != '' ? getenv('USER')
+    : null
 )['dir'];
+// End COPY/PASTE
 
-$ipam_credentials_file="$my_home_dir/.config/IAS/some-awesome-project/ipam_credentials.json";
+// Boilerplate code for options
+$shortopts = "";
+$longopts = array(
+    'ipam-credentials-file::', // This is optional
+);
 
-# print(realpath('~/bin')."\n");
+$options = getopt($shortopts, $longopts);
 
-// print("Home dir: $my_home_dir\n");
+// Set default value for options:
+$ipam_credentials_file = $options['ipam-credentials-file']
+    ?? "$my_home_dir/.config/IAS/some-awesome-project/ipam_credentials.json";
 
-$credentials = json_decode(file_get_contents($ipam_credentials_file));
+// print("ipam_credentials_file: " . $ipam_credentials_file . "\n");
 
-# var_dump($credentials);
+$ipam_credentials = loadJSONFromFile($ipam_credentials_file);
+// End Boilerplate code for options
+
+var_dump($ipam_credentials);
