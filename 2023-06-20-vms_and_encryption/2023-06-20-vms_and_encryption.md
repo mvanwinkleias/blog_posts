@@ -255,6 +255,9 @@ openssh-server
 fail2ban
 ```
 
+#### Useful Browser Plugins
+
+
 #### Useful Server Packages
 
 ```
