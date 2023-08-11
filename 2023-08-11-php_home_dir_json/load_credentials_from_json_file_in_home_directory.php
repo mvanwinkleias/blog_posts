@@ -7,9 +7,9 @@
 // COPY/PASTE (doesn't change)
 function loadJSONFromFile($filename)
 {
-	$contents = file_get_contents($filename);
-	assert(strlen($contents)>0);
-	return json_decode($contents);
+    $contents = file_get_contents($filename);
+    assert(strlen($contents)>0);
+    return json_decode($contents);
 }
 
 $my_home_dir = posix_getpwnam(
