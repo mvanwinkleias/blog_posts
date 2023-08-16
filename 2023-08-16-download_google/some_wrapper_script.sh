@@ -16,8 +16,6 @@ program_to_run="$(get_bin_dir)/unaware_of_infra_script.sh"
 
 output_file_name=$(get_output_file_name)
 
-program_base_name=$( basename "$program_to_run"  )
-
 write_log_informational "Running: $program_to_run"
 
 command_to_run=( \
