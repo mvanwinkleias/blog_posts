@@ -1,0 +1,13 @@
+{
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "package_name" : "mv-disable-snd-hda-intel-power-save",
+   "wiki_page" : "",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "ticket" : "",
+   "AUTOMATION_USER" : "iasnetauto",
+   "summary" : "Disables snd_hda_intel power_save",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "project_dir" : "mv_disable_snd_hda_intel_power_save",
+   "BASE_DIR" : "/opt/IAS",
+   "project_name" : "mv_disable_snd_hda_intel_power_save"
+}

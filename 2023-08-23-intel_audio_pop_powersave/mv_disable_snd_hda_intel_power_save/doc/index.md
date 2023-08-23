@@ -1,0 +1,3 @@
+# mv_disable_snd_hda_intel_power_save
+
+This is the supplemental root documentation for mv_disable_snd_hda_intel_power_save
