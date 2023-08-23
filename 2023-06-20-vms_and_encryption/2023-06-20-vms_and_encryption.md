@@ -271,6 +271,15 @@ fail2ban
 ```
 echo "DenyUsers test" >  /etc/ssh/sshd_config.d/deny_test_user.conf
 ```
+### LUbuntu
+
+#### Static Networking Via Gui
+
+* Bottom Left -> Preferences -> Advanced Network Configuration
+* Bottom left "+"
+* Ethernet, create
+* Connection Name: raw_dns
+* IPv4 settings ... save.
 
 ### Centos Stream 9
 
