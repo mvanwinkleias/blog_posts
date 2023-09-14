@@ -194,6 +194,26 @@ xtigervncviewer localhost::55555
 
 ## System Config Notes
 
+### Lubuntu
+
+#### DHCP + Static DNS Config
+
+* /etc/NetworkManager/system-connections/ias_raw_ns.nmconnection
+
+```
+[connection]
+id=ias_raw_ns
+type=ethernet
+
+[ethernet]
+
+[ipv4]
+dns=172.16.13.154;
+ignore-auto-dns=true
+method=auto
+
+```
+
 ### Ubuntu Server
 
 #### Static Networking
