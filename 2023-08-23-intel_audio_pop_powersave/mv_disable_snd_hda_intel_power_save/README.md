@@ -2,8 +2,6 @@
 
 Disables snd_hda_intel power_save
 
-Here is an introduction to this project.
-
 ## License
 
 copyright (C) 2017 Author, Institution
@@ -24,7 +22,23 @@ See
 
 ## Description
 
-* some_script.sh - does something.
+There are a couple of web sites that describe the issue:  Intel sound cards
+might have power disabled to them in order to save power.  But, that means
+that every time they reactivate you hear a "pop" sound.
+
+So, a solution is to install a configuration file to disable the power
+saving feature.
+
+* https://major.io/p/stop-audio-pops-on-intel-hd-audio/
+
+```
+# echo 0 > /sys/module/snd_hda_intel/parameters/power_save
+```
+
+> This setting will last until you reboot. You can make it permanent by adding this text to /etc/modprobe.d/audio_disable_powersave.conf:
+> ```options snd_hda_intel power_save=0```
+> If you’re a laptop user and you want power savings but fewer pops, you could increase the delay to a more acceptable number. For example, setting it to 60 would mean
+> that the card will power down after 60 seconds of silence. 
 
 # Supplemental Documentation
 
