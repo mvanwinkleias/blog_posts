@@ -63,6 +63,15 @@ marty@marty perl_imports/ $
 
 How do I get python to do the same thing?
 
+```
+lib/
+└── ias
+    └── network
+        └── smtpauthparse
+            ├── __init__.py
+            └── parser.py
+```
+
 I'd like to be able to say:
 
 ```python3
