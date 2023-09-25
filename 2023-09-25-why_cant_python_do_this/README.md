@@ -50,3 +50,11 @@ sub say_hello
 1;
 
 ```
+
+Then run it:
+
+```
+marty@marty perl_imports/ $ ./parse-it.pl 
+Hello.
+marty@marty perl_imports/ $
+```
