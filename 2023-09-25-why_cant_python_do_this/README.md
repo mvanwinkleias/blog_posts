@@ -63,4 +63,10 @@ marty@marty perl_imports/ $
 
 How do I get python to do the same thing?
 
+I'd like to be able to say:
 
+```python3
+import ias.network.smtpauthparse.parser
+
+parser = ias.network.smtpauthparse.parser()
+```
