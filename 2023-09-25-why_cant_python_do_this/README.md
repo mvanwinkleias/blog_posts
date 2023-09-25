@@ -58,3 +58,9 @@ marty@marty perl_imports/ $ ./parse-it.pl
 Hello.
 marty@marty perl_imports/ $
 ```
+
+<br>
+
+How do I get python to do the same thing?
+
+
