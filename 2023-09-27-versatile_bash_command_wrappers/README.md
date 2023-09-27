@@ -48,6 +48,7 @@ function get_sasl_login_authentication_failed
 
 ### Commented:
 
+```bash
 function get_sasl_login_authentication_failed
 {
 		# The first thing we do is save all of the arguments
@@ -77,3 +78,4 @@ function get_sasl_login_authentication_failed
         "${wrap_command[@]}"
 }
 
+```
