@@ -51,30 +51,30 @@ function get_sasl_login_authentication_failed
 ```bash
 function get_sasl_login_authentication_failed
 {
-		# The first thing we do is save all of the arguments
-		# passed to us.  We want to preserve these, so the sooner
-		# the better.
+	# The first thing we do is save all of the arguments
+	# passed to us.  We want to preserve these, so the sooner
+	# the better.
 
 	local all_arguments=( "$@" )
 
-		# We start setting up the array we will use to 
-		# run the command
+	# We start setting up the array we will use to 
+	# run the command
 	local wrap_command=(
 		grep
 		'SASL LOGIN authentication failed'
 	)
 
-		# If there are arguments that we want to pass to the program
+	# If there are arguments that we want to pass to the program
 
 	if ((${#all_arguments[@]}));
 	then
-				# Then for this particular program, just tack them on
-				# to the array that contains what to run
+		# Then for this particular program, just tack them on
+		# to the array that contains what to run
 
 		wrap_command+=( "${all_arguments[@]}" )
 	fi
 
-		# Run the entire array.
+	# Run the entire array.
 	"${wrap_command[@]}"
 }
 
