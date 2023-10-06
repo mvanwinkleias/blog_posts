@@ -1,38 +1,10 @@
 #!/usr/bin/perl
 
-package IAS::Network::URI::Dumper;
 
-use base 'URI';
+use FindBin;
+use lib "$FindBin::Bin";
 
-our $uri_subs = [
-	'scheme',
-	'opaque',
-	'path',
-	'fragment',
-	'as_string',
-	'as_iri',
-#	'canonical', Returns an object
-	'secure',
-	'has_recognized_scheme',
-];
-
-sub dump_uri
-{
-	my ($uri) = @_;
-
-	foreach my $uri_sub (@$uri_subs)
-	{
-		# print "URI sub: $uri_sub\n";
-		$data->{$uri_sub} = $uri->$uri_sub();
-	}
-
-	$data->{query} = { $uri->query_form() };
-
-	return $data;
-
-}
-
-package main;
+use IAS::Network::URI::Dumper;
 
 use JSON;
 
@@ -43,7 +15,9 @@ if (! defined $url_string )
 	exit 1;
 }
 
-my $uri = IAS::Network::URI->new($url_string);
+my $uri = URI->new($url_string);
 my $json = JSON->new->allow_nonref;
+$json->canonical([1]);
+$json->pretty([1]);
 
-print $json->encode($uri->dump_uri),$/;
+print $json->encode(IAS::Network::URI::Dumper::dump_uri($uri)),$/;
