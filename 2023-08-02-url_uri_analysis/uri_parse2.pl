@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 
-use URI;
-use JSON;
+package IAS::Network::URI::Dumper;
 
-my $uri_subs = [
+use base 'URI';
+
+our $uri_subs = [
 	'scheme',
 	'opaque',
 	'path',
@@ -14,28 +15,35 @@ my $uri_subs = [
 	'secure',
 	'has_recognized_scheme',
 ];
-my $url_string = $ARGV[0];
 
+sub dump_uri
+{
+	my ($uri) = @_;
+
+	foreach my $uri_sub (@$uri_subs)
+	{
+		# print "URI sub: $uri_sub\n";
+		$data->{$uri_sub} = $uri->$uri_sub();
+	}
+
+	$data->{query} = { $uri->query_form() };
+
+	return $data;
+
+}
+
+package main;
+
+use JSON;
+
+my $url_string = $ARGV[0];
 if (! defined $url_string )
 {
 	print STDERR "Error: First parameter is URL to deconstruct",$/;
 	exit 1;
 }
 
-my $uri = URI->new($url_string);
-
-my $data = {};
-
-# $data->{host} = $uri->host();
-
-foreach my $uri_sub (@$uri_subs)
-{
-	# print "URI sub: $uri_sub\n";
-	$data->{$uri_sub} = $uri->$uri_sub();
-}
-
-$data->{query} = { $uri->query_form() };
-
+my $uri = IAS::Network::URI->new($url_string);
 my $json = JSON->new->allow_nonref;
 
-print $json->encode($data),$/;
+print $json->encode($uri->dump_uri),$/;
