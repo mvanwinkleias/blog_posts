@@ -2,7 +2,12 @@
 
 package IAS::Network::URI::Dumper;
 
-use base 'URI';
+sub new
+{
+	my $type = shift;
+	my $self = {};
+	return bless $self, $type;
+}
 
 our $uri_subs = [
 	'scheme',
