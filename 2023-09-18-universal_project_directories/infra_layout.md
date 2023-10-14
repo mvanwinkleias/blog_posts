@@ -2,8 +2,9 @@
 project_layout/
 ├── artifacts
 │   └── project-layout
-├── build_systems
-│   └── package_shell
+├── systems
+│   ├── package_shell
+│   └── full_project
 ├── doc
 ├── eph
 │   ├── build
@@ -69,7 +70,13 @@ Should it be the home directory of:?
 	* ix_get_dir_project_tests
 	...
 	
+* ix_get_dir_bin_base - typically src/bin .  bin_dir will always refer to the directory containing
+the current script that's being executed.
+	* ix_bin_whence - specifies which "bin" directory all of this is supposed to be calculated from
+		* real - the actual path to the script
+		* symbolic - if the script was run through a symbolic link, then the directory containing the symbolic link is used
 
+ 
 
 #### Build System
 
@@ -80,5 +87,4 @@ or maybe an sqlite database.
 
 * ix_get_dir_eph_var_log_build_root
 * ix_get_dir_eph_var_build_root_var_lib
-
 
