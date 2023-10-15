@@ -1,0 +1,31 @@
+body {
+	background-color: grey;
+}
+
+.header_footer {
+	color: white;
+	background-color: #02315c;
+	width = 100%;
+	align = middle;
+}
+
+.header_footer_link {
+
+}
+
+
+.body_content_title {
+	display: flex;
+	align-items: flex-end;
+}
+
+.body_content_title_image {
+	float: left;
+}
+
+.body_content_title_text {
+}
+
+.body_content_main {
+	clear: both;
+}
