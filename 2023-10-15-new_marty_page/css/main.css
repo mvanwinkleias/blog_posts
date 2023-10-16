@@ -6,17 +6,41 @@ body {
 	color: white;
 	background-color: #02315c;
 	width = 100%;
-	align = middle;
-
+	text-align = center;
+	padding: 5;
 	clear: both;
+}
+
+.nav {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline-block;
+	margin-left: 20;
+	margin-right: 20;
 }
 
 .header_footer_entry_left {
 	float: left;
+	clear: none;
+
 }
+
+.header_footer_entry_middle {
+	text-align: center;
+	clear: none;
+	float: 
+}
+
+
 
 .header_footer_entry_right {
 	float:right;
+	clear: none;
 }
 
 .header_footer_link {
