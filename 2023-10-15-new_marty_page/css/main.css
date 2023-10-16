@@ -7,16 +7,28 @@ body {
 	background-color: #02315c;
 	width = 100%;
 	align = middle;
+
+	clear: both;
+}
+
+.header_footer_entry_left {
+	float: left;
+}
+
+.header_footer_entry_right {
+	float:right;
 }
 
 .header_footer_link {
-
+	color: white;
 }
 
 
 .body_content_title {
 	display: flex;
 	align-items: flex-end;
+	
+	clear: both;
 }
 
 .body_content_title_image {
