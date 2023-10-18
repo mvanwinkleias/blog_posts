@@ -65,3 +65,8 @@ body {
 .body_content_main {
 	clear: both;
 }
+
+.no-screen, .no-screen *
+{
+	display: none !important;
+}
