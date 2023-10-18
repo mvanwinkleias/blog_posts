@@ -2,6 +2,19 @@ body {
 	background-color: grey;
 }
 
+/* I want for the main content to be centered */
+/* but putting it in something apparently doesn't work */
+.center_wrapper {
+	border: white;
+	width: 100%;
+	text-align: center;
+}
+
+.left_wrapper {
+	text-align: left;
+}
+/* end main content centering attempt */
+
 .header_footer {
 	color: white;
 	background-color: #02315c;
