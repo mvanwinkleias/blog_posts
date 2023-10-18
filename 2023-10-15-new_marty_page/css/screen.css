@@ -1,0 +1,4 @@
+.no-screen, .no-screen *
+{
+	display: none !important;
+}
