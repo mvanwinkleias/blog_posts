@@ -3,9 +3,8 @@
 First off:  Tabs are tabs.  They're not "spaces".  They're tabs.
 
 They specify:
-
-	* an indentation level
-	* a column separator
+* an indentation level
+* a column separator
 
 # Questionable Indentation Styles
 
