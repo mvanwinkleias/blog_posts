@@ -35,7 +35,19 @@ int some_much_longer_function_name_that_does_something( int param1,
                                                       );
 ```
 Why would you want this?
+It seems like this indentation style might have been a good idea when your function
+names were short.  And now that they're long, you can't admit that all of the other
+code you wrote was indented poorly.
 
+Here's what it looks like when you don't do that nonsense:
+
+```c
+int some_much_longer_function_name_that_does_something( 
+	int param1,
+	int param2,
+	int param3
+);
+```
 For languages that use curly braces that start a code block,
 I don't do this:
 ```c
