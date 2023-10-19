@@ -6,6 +6,20 @@ They specify:
 * an indentation level
 * a column separator
 
+If you've spent any time in this industry you'd know that
+"it's working" doesn't mean "it's good".  Also, the simplest answer
+tends to be the correct one.  Not the "simplest in short terms"
+answer, the "simplest overall answer, for what matters".  As things
+get complicated, this opinion gets way less subjective.
+
+Here are all of the programming languages and their indentation "standards":
+
+* Ruby: 2 spaces
+* PHP: 2 spaces or 4 spaces
+* Python: 4 spaces
+
+(Why not use tabs, and let the programmer decide?)
+
 # Questionable Indentation Styles
 
 I have NO idea why people indent things like this:
