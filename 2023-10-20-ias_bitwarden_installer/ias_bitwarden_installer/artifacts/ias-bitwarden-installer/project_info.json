@@ -1,0 +1,13 @@
+{
+   "wiki_page" : "",
+   "package_name" : "ias-bitwarden-installer",
+   "ticket" : "",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "AUTOMATION_USER" : "iasnetauto",
+   "project_dir" : "ias_bitwarden_installer",
+   "project_name" : "ias_bitwarden_installer",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "BASE_DIR" : "/opt/IAS",
+   "summary" : "Installs Bitwarden"
+}
