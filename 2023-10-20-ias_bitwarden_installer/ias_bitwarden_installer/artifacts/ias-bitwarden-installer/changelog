@@ -1,3 +1,7 @@
+ias-bitwarden-installer 2023.9.3-0 noarch; urgency=low
+
+	* install bitwarden thing
+
 ias-bitwarden-installer 1.0.0-0 noarch; urgency=low
 
 	* initial packaging stuff
