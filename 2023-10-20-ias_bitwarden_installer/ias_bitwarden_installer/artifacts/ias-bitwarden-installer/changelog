@@ -1,3 +1,7 @@
+ias-bitwarden-installer 2023.10.1-1 noarch; urgency=low
+
+	* added fuse dep for debian
+
 ias-bitwarden-installer 2023.10.1-0 noarch; urgency=low
 
 	* Including bw
