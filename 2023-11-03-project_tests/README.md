@@ -1,8 +1,27 @@
 # Tests
 
-While I was establishing how tests could be done within the full
-project system I thought about things.  Some of those things
-don't belong inside the system itself.
+The solution is to provide examples that:
+
+* Work out of the box
+* Are easy to setup and configure
+
+Such that it is easy to demonstrate that the convienence that
+is provided is better than not using it.
+
+Having a consistent and published way of doing things is not
+a mandate.  I'd like to think that we create tools to make life
+easy, and if the tool doesn't make life easier, then it's not
+a good tool.  Showing how something can work is not an endorsement.
+
+This is not the same thing as achieving a requisite level of
+knowledge in order to abstract complexity:  If somebody on a
+team can write tests for software in a way that adds no
+encumberance to the development process, then that can be a
+good thing.
+
+The point of a lot of this work is to figure out where things
+have a tendency to get out of hand when organization and design
+of ancillary components take a back seat to work.
 
 ## Forward
 
@@ -32,10 +51,24 @@ doesn't have syntax errors" should be sufficient for simple things
 that have no substantial risk of being deployed with bugs, or there
 is little risk to having been deployed with bugs.
 
-To that end, I will eventually be making testing templates that
-automatically work the following scenarios:
 
-* [TAP](https://testanything.org) whereby:
-	* Running "prove tests/t" in the top level of the project
-	should be sufficient for simple things and for the simple
-	examples provided.
+## When do I need more tests?
+
+* Complexity
+* Criticality
+
+### Complexity
+
+The thing does so many things you've lost track of what it's supposed to do
+
+### Criticality
+
+How much failure hurts
+
+## Tests and the toplevel makefile
+
+The way the full project layout works is it's supposed to allow you
+to build multiple artifacts from the same project.
+
+Knowing which targets to run for building and testing is a responsibility
+of the build environment.
