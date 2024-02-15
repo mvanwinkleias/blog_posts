@@ -1,0 +1,20 @@
+init_things:
+	touch AUTHORS ChangeLog COPYING INSTALL NEWS README
+	autoreconf --install
+	automake --add-missing
+	./configure
+
+build_stuff:
+	make doc/simple-manual.info
+
+# This was fetched from here:
+# https://opensource.com/article/19/7/introduction-gnu-autotools
+# 
+# it was modifed to work.
+
+clean-local:
+	@rm -f config.status configure config.log
+	@rm -f Makefile 
+	@rm -rf autom4te.cache/
+	@rm -f aclocal.m4 
+	@rm -f compile install-sh missing Makefile.in

@@ -1,0 +1,35 @@
+# Editors
+
+## Dia
+*.dia.autosave
+
+## Emacs
+\#*\#
+.\#*
+
+
+## Vi / Vim
+*.swp
+
+# Autotools stuff
+Makefile.in
+aclocal.m4
+autom4te.cache/
+compile
+config.h.in
+configure
+depcomp
+install-sh
+missing
+
+# These are from after you run configure and make
+Makefile
+config.h
+config.log
+config.status
+
+# docs
+
+doc/.dirstamp
+doc/*.info
+
