@@ -30,6 +30,20 @@ is readable by only the current user.
 
 Programs can be written to look for files containing credentials by default in that directory. 
 
+### Turing Complete Configuration Is Bad
+
+Reasons:
+
+* Static analysis is hard on Turing Complete things
+* UNLESS you've made something that makes static analysis of a specific format easy
+
+The long story short is that Turing Complete things can do anything and that's hard
+to analyze, unless you've come up with a standardized way of doing those things.
+And if you've come up with a standardized way of doing those things (such as configuration)
+it doesn't need to be Turing Complete.
+
+This allows you to isolate areas that "code" can creep in from.
+
 ## The Separation of Production Data, Test Data and Logs
 
 Create a standard repository layout and ```.gitignore``` files which ignore the locations where
