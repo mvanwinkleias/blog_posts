@@ -20,3 +20,5 @@ src/java/**/*.class
 
 # perl6
 src/**/.precomp
+
+*..xlsx\#

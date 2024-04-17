@@ -10,6 +10,8 @@
 
 # Tests happen in ASCII order
 
+function local_test_convert_hex_to_url
+{
 convert_hex_to_url '2d' # '-' - hyphen.  Should come through.
 convert_hex_to_url '2e' # '.' - dot.  Should come through.
 
@@ -26,7 +28,7 @@ convert_hex_to_url '7a' # 'z' - should come through
 convert_hex_to_url '7b' # '{' - should stay 7b
 
 convert_hex_to_url '7e' # '~' - tilde.  Should come through.
-
-
 printf "\n"
+}
 
+test_convert_hex_to_url
