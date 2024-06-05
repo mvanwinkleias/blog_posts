@@ -90,8 +90,15 @@ kvm-ok
 
 ### Install stuff
 
+ubuntu 22.04
 ```
 sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
+```
+
+ubuntu 24
+
+```
+sudo apt install -y qemu-system-x86 libvirt-daemon libvirt-clients bridge-utils virt-manager
 ```
 
 ### Setup services
@@ -121,6 +128,8 @@ Edit -> Preferences -> Enable XML exiting
 ```
 
 Edit the default network to start distributing IPs at 128.
+
+You might have to stop and start the network afterward.
 
 ### Accessing virt-manager remotely (sound works!)
 
