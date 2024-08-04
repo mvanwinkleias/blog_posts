@@ -30,11 +30,13 @@ class IAS::Infra::FullProjectPaths
 	{
 		if (self.is_in_src())
 		{
-			return self.bin_dir().IO.resolve.parent.sibling("lib/$lang")
+			return self.bin_dir().IO.resolve.parent.sibling("lib/$lang");
 		}
 		else
 		{
-			return self.install_path.IO.resolve.sibling("lib/$lang");
+			my $new_path = IO::Path.new($install_path);
+			return $new_path.add("lib/$lang");
 		}
 	}
 }
+

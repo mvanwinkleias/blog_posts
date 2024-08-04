@@ -1,7 +1,8 @@
 #!/usr/bin/raku
 
-use lib $*PROGRAM.IO.resolve.parent.sibling('lib/raku');
 use lib "/opt/IAS/lib/raku";
+use lib $*PROGRAM.IO.resolve.parent.sibling('lib/raku');
+
 use IAS::Infra;
 
 my $app = IAS::Infra.new();
