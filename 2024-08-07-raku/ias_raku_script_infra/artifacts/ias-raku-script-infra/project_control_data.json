@@ -1,0 +1,93 @@
+{
+   "not-template-files-paths" : {
+      "regexes" : [
+         {
+            "regex" : "\\[% project.NON_TEMPLATE_NAME %\\]"
+         }
+      ],
+      "comment" : "For this project these are demonstrations / tests."
+   },
+   "transforms" : [
+      {
+         "transform" : "underscores_to_dashes",
+         "name" : "package_name",
+         "template_string" : "[% project_name %]"
+      }
+   ],
+   "not-template-files-contents" : {
+      "comment" : "For this project these are demonstrations / tests.",
+      "regexes" : [
+         {
+            "regex" : "\\.jpg$",
+            "comment" : "jpg files"
+         },
+         {
+            "comment" : "png files",
+            "regex" : "\\.png$"
+         }
+      ]
+   },
+   "post-create-run" : "cd [% project_name %]; make -f package_shell/make/project_layout_1-post_create.gmk project_layout_1-post_create",
+   "template_base_dir" : "/opt/IAS/templates/ias-package-shell/project_dir/",
+   "prompts" : [
+      {
+         "prompt" : "Project Name: ",
+         "description" : "Contains only letters, numbers and underscores.  Required.",
+         "name" : "project_name",
+         "fail_regex" : "[^0-9a-zA-Z_]"
+      },
+      {
+         "name" : "summary",
+         "fail_regex" : "^\\s*$",
+         "prompt" : "Summary: ",
+         "description" : "Short description of project.  Required."
+      },
+      {
+         "prompt" : "Wiki page: ",
+         "description" : "External documentation.",
+         "name" : "wiki_page"
+      },
+      {
+         "name" : "ticket",
+         "prompt" : "Ticket: ",
+         "description" : "Link to ticket, or ticket ID"
+      },
+      {
+         "prompt" : "Automation user name:",
+         "description" : "Service user account.",
+         "dont_prompt" : true,
+         "name" : "AUTOMATION_USER",
+         "default_value" : "iasnetauto"
+      },
+      {
+         "default_value" : "iasnetauto",
+         "name" : "AUTOMATION_GROUP",
+         "dont_prompt" : true,
+         "description" : "Service group.",
+         "prompt" : "Automation user group:"
+      },
+      {
+         "default_value" : 0,
+         "name" : "USE_AUTOMATION_PERMISSIONS",
+         "description" : "Sets up permissions for the service user.",
+         "dont_prompt" : true
+      },
+      {
+         "prompt" : "Base dir: ",
+         "dont_prompt" : true,
+         "description" : "Where project files get installed.  Required.",
+         "default_value" : "/opt/IAS",
+         "name" : "BASE_DIR"
+      },
+      {
+         "name" : "installed_directory_layout",
+         "default_value" : "project_directories-full_project.gmk",
+         "dont_prompt" : true,
+         "description" : "File containing layout."
+      }
+   ],
+   "save-data" : {
+      "project_control_data" : "[% project_name %]/artifacts/[% package_name %]/project_control_data.json",
+      "project_info" : "[% project_name %]/artifacts/[% package_name %]/project_info.json"
+   }
+}

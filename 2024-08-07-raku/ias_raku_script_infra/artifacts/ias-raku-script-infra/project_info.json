@@ -1,0 +1,13 @@
+{
+   "summary" : "Raku",
+   "package_name" : "ias-raku-script-infra",
+   "project_name" : "ias_raku_script_infra",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "wiki_page" : "",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "BASE_DIR" : "/opt/IAS",
+   "AUTOMATION_USER" : "iasnetauto",
+   "ticket" : "",
+   "project_dir" : "ias_raku_script_infra"
+}
