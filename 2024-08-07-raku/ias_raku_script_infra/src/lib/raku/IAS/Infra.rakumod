@@ -1,20 +1,16 @@
 #!/usr/bin/raku
 
+use IAS::Infra::BinWhence;
 use IAS::Infra::FullProjectPaths;
 
 class IAS::Infra
+	is IAS::Infra::BinWhence
 	is IAS::Infra::FullProjectPaths
 {
-	method say_hello()
+	multi method say_hello()
 	{
 		say "Hello.";
 	}
-
-	method bin_dir()
-	{
-		return $*PROGRAM.IO.resolve.parent();
-	}
-
 
 	
 }
