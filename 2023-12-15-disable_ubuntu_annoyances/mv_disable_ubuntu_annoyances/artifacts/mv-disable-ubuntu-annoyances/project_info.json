@@ -1,0 +1,13 @@
+{
+   "ticket" : "",
+   "project_name" : "mv_disable_ubuntu_annoyances",
+   "wiki_page" : "",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "project_dir" : "mv_disable_ubuntu_annoyances",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "package_name" : "mv-disable-ubuntu-annoyances",
+   "summary" : "Disables some annoying things about ubuntu",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "AUTOMATION_USER" : "iasnetauto",
+   "BASE_DIR" : "/opt/IAS"
+}
