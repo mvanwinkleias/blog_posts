@@ -13,7 +13,7 @@ super_secret_password
 
 Which could get read like this:
 
-* script&#46;sh
+* [script1&#46;sh](./script1.sh)
 ```bash
 user=$(head -n1 config.txt)
 pass=$(tail -n1 config.txt)
@@ -49,7 +49,7 @@ The above example becomes:
 }
 ```
 
-* script&#46;sh
+* [script2&#46;sh](./script2.sh)
 ```bash
 user=$(jq --raw-output '.db_user' config.json)
 pass=$(jq --raw-output '.db_pass' config.json)
@@ -70,6 +70,8 @@ Yes, it is.  And more stuff means more stuff can go wrong.  BUT...
 
 I've written a BASH function that loads a JSON object of 1 depth
 into a BASH associative array:
+
+* [final&#46;sh](./final.sh)
 
 ```bash
 declare -A config
