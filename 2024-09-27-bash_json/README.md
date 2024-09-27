@@ -41,7 +41,7 @@ growth and is supported by other programming languages?
 
 The above example becomes:
 
-* config.json
+* [config.json](./config.json)
 ```
 {
 	"db_user" : "database_user",
