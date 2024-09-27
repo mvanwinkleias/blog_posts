@@ -37,7 +37,7 @@ growth and is supported by other programming languages?
 ## Enter JSON
 
 * JSON is excellent for simple configuration files.
-* *jq* is widely available.
+* *jq* , a program for (among other things) querying JSON is widely available.
 
 The above example becomes:
 
