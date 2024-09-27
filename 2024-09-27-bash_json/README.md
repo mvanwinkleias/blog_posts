@@ -1,5 +1,7 @@
 # BASH and JSON.
 
+All of the examples (short as they may be) are available in this directory.
+
 ## The Overall Problem
 
 I frequently run into off-the-cuff configuration file formats (and locations)
