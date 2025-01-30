@@ -55,7 +55,7 @@ HOWEVER
 
 tar(1) is capable of recognizing sparse files.  So, if you:
 ```
-tar -czvf file.iso.tar.gz file.iso
+tar --sparse -czvf file.iso.tar.gz file.iso
 ```
 
 the resulting file should not cause all 4GB to be written to DVD
