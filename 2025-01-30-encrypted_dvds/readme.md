@@ -16,6 +16,46 @@ Of course, you could (say):
 
 But then you'd still need to "interact" with GPG.
 
+## Update
+
+From:
+
+* https://gist.github.com/pieroproietti/cddde900e69ab9c50e8499f440114f1a
+
+annotated:
+
+### Gist:
+
+Create the image:
+
+```
+mksquashfs /path/to/my/directory image.sqfs
+# or
+genisoimage -quiet -r data_dir/ > file.iso
+```
+
+Encrypt it
+```
+# cryptsetup needs the 8M at the end of the file
+truncate -s +8M image.sqfs
+cryptsetup --batch-mode reencrypt --encrypt --type luks2 \
+  --resilience none --disable-locks --reduce-device-size 8M image.sqfs
+```
+
+* --batch-mode - Suppresses all confirmation questions. Use with care!
+* --resilience none - Disable protections against encryption being interrupted
+I suppose this is acceptable because up until now you're still working with a copy
+of the original data.
+
+We can burn the iso now, but the file size can be decreased by 4M
+
+```
+# But now we can get rid of 4M at the end of the file
+truncate -s -4M image.sqfs
+```
+
+# Deprecated below
+
 ## Goals
 
 * Minimize user-interaction:
@@ -45,7 +85,7 @@ Copy whatever files you want to /mnt/encrypted_volume , but don't exceed the ava
 Then:
 ```
 umount /mnt/encrypted_volume
-cryptsetup luksClose
+cryptsetup luksClose encrypted_volume
 ```
 
 If you burn file.iso as an iso image, all 4GB will be written to the DVD.
