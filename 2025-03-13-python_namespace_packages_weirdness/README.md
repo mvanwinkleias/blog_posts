@@ -1,5 +1,14 @@
 # Python Namespace Package Weirdness
 
+## Introduction
+
+I had previously thought that Namespace Packages were a
+game changer for Python.  Not needing an \_\_init\_\_.py
+for everything makes a bit of sense.
+
+
+
+### Python Version
 ```
 $ python3 --version
 Python 3.10.12
