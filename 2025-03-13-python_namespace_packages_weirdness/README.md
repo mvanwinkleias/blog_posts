@@ -124,7 +124,7 @@ ModuleNotFoundError: No module named 'vehicles.car.electric'; 'vehicles.car' is 
 BUT
 
 This seems broken to me.  (Soundness of this particular relational / hierarchical
-aside): It seems like it would make sense to BE ABLE to have namespace packages
+aside) it seems like it would make sense to BE ABLE to have namespace packages
 which have directories named after a base class, (i.e. **vehicles.car**) and organize
 sub-classes thus: (i.e. **vehicles.car.electric**).
 
