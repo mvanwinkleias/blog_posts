@@ -8,7 +8,7 @@ for everything makes a bit of sense.
 
 However, when I tried to do something that "makes sense" in other languages,
 I got a "weird" result.  I can understand how this is happening, but I don't
-know why things were designed this way, or if they even need to.
+know why things were designed this way.
 
 ### Python Version
 ```
@@ -41,8 +41,8 @@ sedan.say_doors()
 ```python
 # vehicles/car.py
 class sedan:
-	def say_doors(self):
-		print("I am a sedan.  I have 4 doors.")
+    def say_doors(self):
+        print("I am a sedan.  I have 4 doors.")
 ```
 
 ### Output
@@ -77,8 +77,8 @@ bZ4X.say_hello()
 ```python
 # vehicles/car/electric.py
 class bZ4X:
-	def say_hello(self):
-		print("Hello.  I am a BZ4X; a 100% electric vehicle from Toyota.")
+    def say_hello(self):
+        print("Hello.  I am a BZ4X; a 100% electric vehicle from Toyota.")
 
 ```
 
