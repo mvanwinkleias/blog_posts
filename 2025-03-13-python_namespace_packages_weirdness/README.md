@@ -6,7 +6,9 @@ I had previously thought that Namespace Packages were a
 game changer for Python.  Not needing an \_\_init\_\_.py
 for everything makes a bit of sense.
 
-
+However, when I tried to do something that "makes sense" in other languages,
+I got a "weird" result.  I can understand how this is happening, but I don't
+know why things were designed this way, or if they even need to.
 
 ### Python Version
 ```
@@ -59,6 +61,28 @@ electric_car/
     └── car
         └── electric.py
 ```
+
+### Source
+
+```python
+#!/usr/bin/python3
+# run_electric.py
+import vehicles.car.electric
+
+bZ4X = vehicles.car.electric.bZ4X()
+
+bZ4X.say_hello()
+```
+
+```python
+# vehicles/car/electric.py
+class bZ4X:
+	def say_hello(self):
+		print("Hello.  I am a BZ4X; a 100% electric vehicle from Toyota.")
+
+```
+
+### Output
 
 ```
 $ ./run_electric.py 
