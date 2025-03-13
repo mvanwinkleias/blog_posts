@@ -116,4 +116,16 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'vehicles.car.electric'; 'vehicles.car' is not a package
 ```
 
+## I know...
+
+* The existence of *car.py* is causing Python to treat the directory *car* differently.
+* I could easily rename *car.py* to something else and continue on my "merry" way
+
+BUT
+
+This seems broken to me.  (Soundness of this particular relational / hierarchical
+aside): It seems like it would make sense to BE ABLE to have namespace packages
+which have directories named after a base class, (i.e. vehicles.car) and organize
+sub-classes thus: (i.e. vehicles.car.electric).
+
 
