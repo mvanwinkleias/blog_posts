@@ -130,4 +130,23 @@ aside) it seems like it would make sense to be able to have namespace packages
 which have directories named after a base class (i.e. **vehicles.car**), and organize
 sub-classes thus: (i.e. **vehicles.car.electric**).
 
+While namespace packages are an improvement, it now seems that if I want to have
+a base class in one "package", and a child class in another, I either have to:
+* anticipate that it will be used as a base class, and if I want to use a subdirectory
+to organize subclasses I have to name the file containing the base class "differently"
+```
+vehicle/
+├── basecar.py
+└── car
+    └── electric.py
+```
 
+OR
+* When I extend the base class **car** do it in such a way that the
+subdirectories never have the same name as a python file:
+```
+vehicle/
+├── car.py
+└── cartypes
+    └── electric.py
+```
