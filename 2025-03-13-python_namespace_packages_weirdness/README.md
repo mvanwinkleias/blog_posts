@@ -28,7 +28,9 @@ directory as **foo**
 └── foo.py # This breaks importing from bar.py
 ```
 
-## Car
+## A (hopefully) Practical Example
+
+### Car
 
 ```
 plain_car/
@@ -37,7 +39,7 @@ plain_car/
     └── car.py
 ```
 
-### Source
+#### Source
 
 ```python
 #!/usr/bin/python3
@@ -57,14 +59,14 @@ class sedan:
         print("I am a sedan.  I have 4 doors.")
 ```
 
-### Output
+#### Output
 
 ```
 $ ./run_car.py 
 I am a sedan.  I have 4 doors.
 ```
 
-## Electric Car
+### Electric Car
 
 ```
 electric_car/
@@ -74,7 +76,7 @@ electric_car/
         └── electric.py
 ```
 
-### Source
+#### Source
 
 ```python
 #!/usr/bin/python3
@@ -94,7 +96,7 @@ class bZ4X:
 
 ```
 
-### Output
+#### Output
 
 ```
 $ ./run_electric.py 
