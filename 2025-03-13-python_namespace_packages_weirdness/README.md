@@ -6,7 +6,7 @@ I had previously thought that Namespace Packages were a
 game changer for Python.  Not needing an \_\_init\_\_.py
 for everything makes a bit of sense.
 
-However, when I tried to do something that "makes sense" in other languages,
+However, when I tried to do something that makes sense in other languages,
 I got a "weird" result.  I can understand how this is happening, but I don't
 know why things were designed this way.
 
@@ -119,6 +119,8 @@ ModuleNotFoundError: No module named 'vehicles.car.electric'; 'vehicles.car' is 
 ## I know...
 
 * The existence of **car.py** is causing Python to treat the directory **car** differently.
+	* You can "break" a namespace package by putting a .py file with the same name
+	as a directory.
 * I could easily rename **car.py** to something else and continue on my "merry" way
 
 BUT
