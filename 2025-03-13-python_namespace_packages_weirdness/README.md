@@ -16,6 +16,18 @@ $ python3 --version
 Python 3.10.12
 ```
 
+## TL;DR
+
+You can't have a directory named **foo** and a namespace package **foo.bar**
+under that, AND also have a file called **foo.py** in the same
+directory as **foo**
+
+```
+├── foo
+│   └── bar.py
+└── foo.py # This breaks importing from bar.py
+```
+
 ## Car
 
 ```
