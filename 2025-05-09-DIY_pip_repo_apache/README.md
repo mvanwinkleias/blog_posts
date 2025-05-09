@@ -43,10 +43,10 @@ piptest1_your_username_here-0.0.1-py3-none-any.whl
 piptest1_your_username_here-0.0.1.tar.gz
 ```
 
-piptest1_your_username_here needs to be housed in
-piptest1-your-username-here
+piptest1_your_username_here needs to be in a directory named
+"piptest1-your-username-here"
 
-## TL;DR
+## What It Looks Like
 
 Let's say your repo is hosted in /pip 
 
