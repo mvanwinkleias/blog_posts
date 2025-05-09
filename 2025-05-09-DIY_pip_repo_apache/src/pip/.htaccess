@@ -1,0 +1,8 @@
+<IfModule mod_autoindex.c>
+
+
+IndexOptions SuppressHTMLPreamble
+HeaderName /pip/wheel_header.html
+
+
+</IfModule>
