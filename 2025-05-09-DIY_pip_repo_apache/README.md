@@ -59,3 +59,15 @@ pip
 │   └── piptest1_your_username_here-0.0.1.tar.gz
 └── wheel_header.html
 ```
+
+
+## Configuring pip
+
+I'm on Ubuntu, so to add this "repo" for my user:
+
+* ~/.config/pip/pip.conf
+
+```
+[global]
+extra-index-url = http://localhost:80/pip/
+```
