@@ -3,6 +3,7 @@
 import tarfile
 import sys
 import os
+import shutil
 
 from packaging.utils import canonicalize_name
 
@@ -16,7 +17,7 @@ def get_package_name_from_tar_gz_file(filename):
     # print("stripped file name: ")
     # print(stripped_filename)
 
-    member = tar_gz.getmember(stripped_filename+'/PKG-INFO')
+    member = tar_gz.getmember(os.path.join(stripped_filename,'PKG-INFO'))
     file_object = tar_gz.extractfile(member)
     content = file_object.read()
 
@@ -34,11 +35,28 @@ def get_package_name_from_tar_gz_file(filename):
     # print("Package name: " + package_name)
     return package_name
     
+def get_repo_subdir(repo_dir, canonical_name):
+    return os.path.join(repo_dir, canonical_name)
 
-canonical_name = canonicalize_name(
-    get_package_name_from_tar_gz_file(
-        sys.argv[1],
+def add_pip_file_to_repo(filename, dest_repo):
+    print("Filename: " + filename)
+    canonical_name = canonicalize_name(
+        get_package_name_from_tar_gz_file(
+            filename,
+        )
     )
-)
 
-print("Canonical name: " + canonical_name)
+    print("Canonical name: " + canonical_name)
+
+    repo_subdir = get_repo_subdir(dest_repo, canonical_name)
+
+    os.makedirs(repo_subdir, exist_ok=True)
+
+    shutil.copy(filename, repo_subdir)        
+
+# dest_directory=
+
+if __name__ == "__main__":
+    add_pip_file_to_repo(sys.argv[1], sys.argv[2])
+
+
