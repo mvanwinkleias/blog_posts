@@ -1,0 +1,23 @@
+# Build with "snapcraft" in the root of this directory.
+# Then, sudo snap install --devmode mv-diy-pip-repo_<version>_<arch>.snap
+
+name: mv-diy-pip-repo
+version: '0.1'
+summary: DIY pip repo
+description: |
+    Ticket URL: 
+    Wiki Page: 
+
+grade: stable
+confinement: devmode
+base: core18
+
+# apps:
+#     mv-diy-pip-repo_hello.sh:
+#         command: src/bin/mv-diy-pip-repo_hello.sh
+
+parts:
+    snaptest1:
+        plugin: dump
+        source: ./src
+

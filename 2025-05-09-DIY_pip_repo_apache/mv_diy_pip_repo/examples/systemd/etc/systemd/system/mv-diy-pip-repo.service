@@ -1,0 +1,11 @@
+[Unit]
+Description=DIY pip repo
+
+[Service]
+Type=oneshot
+ExecStart=/opt/IAS/bin/mv-diy-pip-repo/mv-diy-pip-repo.sh
+# Environment=""
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,13 @@
+{
+   "project_name" : "mv_diy_pip_repo",
+   "BASE_DIR" : "/opt/IAS",
+   "package_name" : "mv-diy-pip-repo",
+   "AUTOMATION_USER" : "iasnetauto",
+   "ticket" : "",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "wiki_page" : "",
+   "project_dir" : "mv_diy_pip_repo",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "summary" : "DIY pip repo"
+}

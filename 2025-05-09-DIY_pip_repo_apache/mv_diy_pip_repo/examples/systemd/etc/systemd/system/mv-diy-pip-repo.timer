@@ -1,0 +1,27 @@
+# Enable and run this with:
+#   systemctl enable mv-diy-pip-repo.timer
+#   systemctl start mv-diy-pip-repo.timer
+
+[Unit]
+Description=DIY pip repo
+
+[Timer]
+Unit=mv-diy-pip-repo.service
+
+# ## Schedule style, Similar to cron
+#
+# Run every minute (useful for debugging)
+# OnCalendar=*-*-* *:*:00
+#
+# Every 15 minutes:
+# OnCalendar=*:0/15
+#
+# Every day at 07:00:
+# OnCalendar=*-*-* 07:00:00
+#
+# ## Start after boot and run perodically:
+# OnBootSec=10min
+# OnUnitActiveSec=15min
+
+[Install]
+WantedBy=timers.target
