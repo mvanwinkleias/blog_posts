@@ -2,11 +2,13 @@
 
 DIY pip repo
 
-Here is an introduction to this project.
+Python pip repos are both simple and complicated.
+
+Here's something that hopefully makes things less complicated.
 
 ## License
 
-copyright (C) 2017 Author, Institution
+copyright (C) 2025 Martin VanWinkle III, Institute for Advanced Study
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -24,7 +26,7 @@ See
 
 ## Description
 
-* ```src/bin/mv-diy-pip-repo_hello.sh``` - does something
+* ```src/bin/mv-diy-pip-repo.py file.tar.gz /path/to/repo``` - copies file.tar.gz to /path/to/repo/file/file.tar.gz
 
 # Supplemental Documentation
 
@@ -34,42 +36,21 @@ Supplemental documentation for this project can be found here:
 
 # Installation
 
-Ideally stuff should run if you clone the git repo, and install the deps specified
-in either "DEBIAN/control" or "RPM/specfile.spec"
-
-Optionally, you can build a package which will install the binaries in
-
-* /opt/IAS/bin/mv-diy-pip-repo/
-
-# Building a Package
-
-## Requirements
-
-### All Systems
-
-* fakeroot
-
-### Debian
-
-* build-essential
-
-### RHEL based systems
-
-* rpm-build
-
-## Export a specific tag (or just the project directory)
-
-## Supported Systems
-
-### Debian packages
+## pip
 
 ```
-  fakeroot make package-deb
+make -f pip_Makefile pip
 ```
 
-### RHEL Based Systems
+## RPM
 
 ```
 fakeroot make package-rpm
+```
+
+## Deb
+
+```
+fakeroot make package-deb
 ```
 
