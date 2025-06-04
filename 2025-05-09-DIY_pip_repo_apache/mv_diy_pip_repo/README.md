@@ -34,6 +34,14 @@ Supplemental documentation for this project can be found here:
 
 * [Supplemental Documentation](./doc/index.md)
 
+# Python stuff?
+
+Might need
+
+```
+python39-packaging
+```
+
 # Installation
 
 ## pip
