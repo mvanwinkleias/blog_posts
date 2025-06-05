@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import tarfile
+import zipfile
 import sys
 import os
 import shutil
@@ -17,6 +18,8 @@ class mv_pip_repo:
             print(message)
 
     def get_package_name_from_tar_gz_file(self, filename):
+
+        self.print_debug_message("Reading .tar.gz file: " + filename)
         tar_gz = tarfile.open(filename, 'r:gz')
 
         # print(tar_gz.getnames())
@@ -24,8 +27,11 @@ class mv_pip_repo:
         stripped_filename = basename.rstrip('.tar.gz')
         # print("stripped file name: ")
         # print(stripped_filename)
+        internal_name = os.path.join(stripped_filename,'PKG-INFO')
+        self.print_debug_message("Extracting pkg info from: " + internal_name)
+        member = tar_gz.getmember(internal_name)
 
-        member = tar_gz.getmember(os.path.join(stripped_filename,'PKG-INFO'))
+
         file_object = tar_gz.extractfile(member)
         content = file_object.read()
 
@@ -43,6 +49,30 @@ class mv_pip_repo:
         # print("Package name: " + package_name)
         return package_name
         
+    def get_package_name_from_whl_file(self, filename):
+        self.print_debug_message("Reading whl file: " + filename)
+
+        content_as_string = None
+        with zipfile.ZipFile(filename,'r') as zip_file:
+            wanted_path = None
+            for name in zip_file.namelist():
+                if (name.endswith('METADATA')):
+                    wanted_path = name
+
+            self.print_debug_message("Wanted metadata file: " + wanted_path)
+            with zip_file.open(wanted_path, 'r') as metadata_file:
+                content = metadata_file.read()
+
+            content_as_string = content.decode()
+        
+        for line in content_as_string.splitlines():
+            if line.startswith('Name: '):
+                package_name = line.split('Name: ')[1]
+                break
+
+        # print("Package name: " + package_name)
+        return package_name
+
     def get_repo_subdir(self, repo_dir, canonical_name):
         return os.path.join(repo_dir, canonical_name)
 
@@ -51,6 +81,8 @@ class mv_pip_repo:
 
         if ( filename.endswith('tar.gz') ):
             package_name = self.get_package_name_from_tar_gz_file(filename)
+        elif ( filename.endswith('.whl') ):
+            package_name = self.get_package_name_from_whl_file(filename)
 
         return canonicalize_name(package_name)
         
@@ -63,7 +95,6 @@ class mv_pip_repo:
 
         repo_subdir = self.get_repo_subdir(dest_repo, canonical_name)
 
-        sys.exit()
         os.makedirs(repo_subdir, exist_ok=True)
 
         shutil.copy(filename, repo_subdir)        
