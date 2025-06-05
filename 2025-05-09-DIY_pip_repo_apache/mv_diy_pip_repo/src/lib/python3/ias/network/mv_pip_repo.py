@@ -22,12 +22,19 @@ class mv_pip_repo:
         self.print_debug_message("Reading .tar.gz file: " + filename)
         tar_gz = tarfile.open(filename, 'r:gz')
 
+        tarfile_names = tar_gz.getnames()
+
+        internal_name = None
+        for tarfile_name in tarfile_names:
+            if ( tarfile_name.endswith('PKG-INFO') ):
+                internal_name = tarfile_name
+
         # print(tar_gz.getnames())
-        basename = os.path.basename(filename)
-        stripped_filename = basename.rstrip('.tar.gz')
+        # basename = os.path.basename(filename)
+        # stripped_filename = basename.rstrip('.tar.gz')
         # print("stripped file name: ")
         # print(stripped_filename)
-        internal_name = os.path.join(stripped_filename,'PKG-INFO')
+        # internal_name = os.path.join(stripped_filename,'PKG-INFO')
         self.print_debug_message("Extracting pkg info from: " + internal_name)
         member = tar_gz.getmember(internal_name)
 
