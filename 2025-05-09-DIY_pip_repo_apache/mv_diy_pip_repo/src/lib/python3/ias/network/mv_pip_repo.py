@@ -10,7 +10,7 @@ from packaging.utils import canonicalize_name
 class mv_pip_repo:
 
     def __init__(self):
-        self.debug = False
+        self.debug = True
 
     def print_debug_message(self, message):
         if (self.debug == True):
@@ -46,18 +46,24 @@ class mv_pip_repo:
     def get_repo_subdir(self, repo_dir, canonical_name):
         return os.path.join(repo_dir, canonical_name)
 
+    def get_canonical_package_name_from_file(self, filename):
+        package_name = None
+
+        if ( filename.endswith('tar.gz') ):
+            package_name = self.get_package_name_from_tar_gz_file(filename)
+
+        return canonicalize_name(package_name)
+        
     def add_pip_file_to_repo(self, filename, dest_repo):
         self.print_debug_message("Filename: " + filename)
-        canonical_name = canonicalize_name(
-            self.get_package_name_from_tar_gz_file(
-                filename,
-            )
-        )
+
+        canonical_name = self.get_canonical_package_name_from_file(filename)
 
         self.print_debug_message("Canonical name: " + canonical_name)
 
         repo_subdir = self.get_repo_subdir(dest_repo, canonical_name)
 
+        sys.exit()
         os.makedirs(repo_subdir, exist_ok=True)
 
         shutil.copy(filename, repo_subdir)        
