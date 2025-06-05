@@ -11,7 +11,7 @@ from packaging.utils import canonicalize_name
 class mv_pip_repo:
 
     def __init__(self):
-        self.debug = True
+        self.debug = False
 
     def print_debug_message(self, message):
         if (self.debug == True):
