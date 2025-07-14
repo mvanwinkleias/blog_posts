@@ -6,6 +6,9 @@ class sample_app1:
         """ This says hello. """
         print("Hello from " + __name__)
 
+def run():
+	app = sample_app1()
+	app.run()
+
 if __name__ == "__main__":
-    app = sample_app1()
-    app.run()
+	run()
