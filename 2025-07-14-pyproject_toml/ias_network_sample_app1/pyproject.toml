@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ias_network_sample_app1"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+
+where = ["src/lib/python3"]
+
+[project.scripts]
+
+ias-network-sample-app1 = "ias.network.sample_app1:main"
+
+[tool.setuptools]
+script-files = ["src/bin/ias-network-sample-app-wrapper.py"]
+
+# Why doesn't this work, python?!
+# script-files = ["src/bin/*.py"]
