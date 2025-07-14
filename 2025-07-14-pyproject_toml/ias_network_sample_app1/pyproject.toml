@@ -6,16 +6,14 @@ build-backend = "setuptools.build_meta"
 name = "ias_network_sample_app1"
 version = "0.1.0"
 
-[tool.setuptools.packages.find]
-
-where = ["src/lib/python3"]
-
-[project.scripts]
-
-ias-network-sample-app1 = "ias.network.sample_app1:main"
-
 [tool.setuptools]
+
+package-dir = {"" = "src/lib/python3"}
 script-files = ["src/bin/ias-network-sample-app-wrapper.py"]
 
 # Why doesn't this work, python?!
 # script-files = ["src/bin/*.py"]
+
+[project.scripts]
+
+ias-network-sample-app1 = "ias.network.sample_app1:run"
