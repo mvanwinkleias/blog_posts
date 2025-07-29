@@ -1,0 +1,13 @@
+{
+   "project_dir" : "ias_actually_detatch_from_pdf",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "wiki_page" : "",
+   "project_name" : "ias_actually_detatch_from_pdf",
+   "AUTOMATION_USER" : "iasnetauto",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "package_name" : "ias-actually-detatch-from-pdf",
+   "summary" : "pdfdetach might not like to detatch files with slashes in the name",
+   "ticket" : "",
+   "BASE_DIR" : "/opt/IAS"
+}

@@ -1,0 +1,93 @@
+{
+   "save-data" : {
+      "project_info" : "[% project_name %]/artifacts/[% package_name %]/project_info.json",
+      "project_control_data" : "[% project_name %]/artifacts/[% package_name %]/project_control_data.json"
+   },
+   "post-create-run" : "cd [% project_name %]; make -f package_shell/make/project_layout_1-post_create.gmk project_layout_1-post_create",
+   "not-template-files-paths" : {
+      "comment" : "For this project these are demonstrations / tests.",
+      "regexes" : [
+         {
+            "regex" : "\\[% project.NON_TEMPLATE_NAME %\\]"
+         }
+      ]
+   },
+   "prompts" : [
+      {
+         "description" : "Contains only letters, numbers and underscores.  Required.",
+         "name" : "project_name",
+         "prompt" : "Project Name: ",
+         "fail_regex" : "[^0-9a-zA-Z_]"
+      },
+      {
+         "fail_regex" : "^\\s*$",
+         "prompt" : "Summary: ",
+         "description" : "Short description of project.  Required.",
+         "name" : "summary"
+      },
+      {
+         "description" : "External documentation.",
+         "prompt" : "Wiki page: ",
+         "name" : "wiki_page"
+      },
+      {
+         "description" : "Link to ticket, or ticket ID",
+         "name" : "ticket",
+         "prompt" : "Ticket: "
+      },
+      {
+         "prompt" : "Automation user name:",
+         "description" : "Service user account.",
+         "name" : "AUTOMATION_USER",
+         "default_value" : "iasnetauto",
+         "dont_prompt" : true
+      },
+      {
+         "dont_prompt" : true,
+         "prompt" : "Automation user group:",
+         "name" : "AUTOMATION_GROUP",
+         "description" : "Service group.",
+         "default_value" : "iasnetauto"
+      },
+      {
+         "dont_prompt" : true,
+         "description" : "Sets up permissions for the service user.",
+         "name" : "USE_AUTOMATION_PERMISSIONS",
+         "default_value" : 0
+      },
+      {
+         "dont_prompt" : true,
+         "description" : "Where project files get installed.  Required.",
+         "default_value" : "/opt/IAS",
+         "prompt" : "Base dir: ",
+         "name" : "BASE_DIR"
+      },
+      {
+         "default_value" : "project_directories-full_project.gmk",
+         "description" : "File containing layout.",
+         "name" : "installed_directory_layout",
+         "dont_prompt" : true
+      }
+   ],
+   "transforms" : [
+      {
+         "template_string" : "[% project_name %]",
+         "transform" : "underscores_to_dashes",
+         "name" : "package_name"
+      }
+   ],
+   "template_base_dir" : "/opt/IAS/templates/ias-package-shell/project_dir/",
+   "not-template-files-contents" : {
+      "comment" : "For this project these are demonstrations / tests.",
+      "regexes" : [
+         {
+            "comment" : "jpg files",
+            "regex" : "\\.jpg$"
+         },
+         {
+            "regex" : "\\.png$",
+            "comment" : "png files"
+         }
+      ]
+   }
+}
