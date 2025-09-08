@@ -51,7 +51,7 @@ openssh-server
 fail2ban
 tmux
 gimp
-zbar-utils
+zbar-tools
 vlc
 perl-doc
 vim
