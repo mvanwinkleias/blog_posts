@@ -28,9 +28,9 @@ then
 	exit 1
 fi
 
-what_grep_cound=$(
+what_grep_found=$(
 	printf "$available_dirs\n" \
-	| grep -E "^$remote_dir$" \
+	| grep -E "^$remote_dir\$" \
 )
 grep_result="$?"
 
@@ -43,7 +43,7 @@ then
 fi
 
 sshfs \
-	"$remote_user"@"$remote_host":"$remote_base_dir"/"remote_dir" \
+	"$remote_user"@"$remote_host":"$remote_base_dir"/"$remote_dir" \
 	./"$remote_dir" \
 	-o IdentityFile="$ssh_identity" \
 
