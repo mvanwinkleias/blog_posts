@@ -1,0 +1,13 @@
+cache/
+Cache/
+.cache/
+Code Cache/
+.local/
+.log/
+permanent/chrome/idb/
+datareporting/
+saved-telemetry-pings/
+.wine/
+.zoom/
+CacheStorage/
+build/
