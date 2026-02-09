@@ -2,6 +2,7 @@ cache/
 Cache/
 .cache/
 Code Cache/
+Crash Reports/
 .local/
 .log/
 permanent/chrome/idb/
@@ -11,3 +12,7 @@ saved-telemetry-pings/
 .zoom/
 CacheStorage/
 build/
+.config/vokoscreen/*.log
+.thunderbird/
+.mozilla/
+snap/
