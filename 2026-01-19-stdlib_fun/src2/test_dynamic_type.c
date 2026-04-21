@@ -1,3 +1,4 @@
+#include "some_array_thing.h"
 #include "macro_thing.h"
 
 stdlib_dynamic_cmp_type(int)
