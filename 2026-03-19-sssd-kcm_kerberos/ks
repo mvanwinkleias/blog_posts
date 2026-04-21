@@ -8,6 +8,7 @@ grep_for="$1" ; shift
 if [[ -z "$grep_for" ]]
 then
 	>&2 printf "First argument is princ to look for...\n"
+	>&2 printf "To see what's available:   klist -A\n"
 	exit 1
 fi
 princs=$( klist -A | grep 'Default principal:' | awk -F'Default principal: ' '{print $2}' | grep "$grep_for" )
