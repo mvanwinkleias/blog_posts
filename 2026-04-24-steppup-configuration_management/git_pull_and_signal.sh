@@ -3,6 +3,9 @@
 signal_names="$1" ; shift
 git_options="$1" ; shift
 
+# check if ahead:
+# ahead_count=$(git rev-list --count @{upstream}..HEAD)
+
 function git_pull_and_signal_usage
 {
 	>&2 cat <<EOH
