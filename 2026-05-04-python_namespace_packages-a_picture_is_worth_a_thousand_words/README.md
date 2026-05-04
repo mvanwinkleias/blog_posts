@@ -7,6 +7,9 @@ This "tutorial" was created for a number of reasons.
 
 I view this as a way to get on the path to fixing those issues.
 
+I recommend you just read through all of the files in namespace_zebra to get
+an idea of what's going on.
+
 ## Namespace Packages
 
 Namespace packages in Python are a significant improvement when it comes
@@ -28,7 +31,7 @@ namespace_zebra/
 ├── pyproject.toml
 └── src
     ├── bin
-    │   └── zebra-wrapper.py
+    │   └── zebra-wrapper.py # optional
     └── lib
         └── animals
             └── zebra.py
@@ -42,12 +45,26 @@ src/lib/animals/zebra.py.
 This layout allows you to be very agile with new libraries.
 The usage of namespace packages allows you to not need \_\_init\_\_.py .
 
-### src/bin
+### Annotated relevant sections of pyproject.toml
 
-This is not "necessary".  2 methods for wrapping / calling your program
-are provided.  They are not mutually exclusive.  This is one of them,
-and is discussed later.
+```toml
+# Install all packages under this dir:
+[tool.setuptools]
+package-dir = {"" = "src/lib"}
 
+# Optional:
+# If you want to have a custom wrapper for your program
+# put it in src/bin , and this causes it to be installed
+# into venv/bin
+script-files = ["src/bin/zebra-wrapper.py"]
+
+[project.scripts]
+
+# Optional:
+# If you want a wrapper script set up for you that calls
+# a subroutine inside of a file, use this:
+zebra-bray = "animals.zebra:do_zebra_run"
+```
 ## Initialization
 
 ```
@@ -56,16 +73,27 @@ source venv/bin/activate
 pip install --editable .
 ```
 
+You can edit the files under src/lib without reinstalling them.
+
 ## Running
 
-Two examples are shown for entry points.
+Two examples provided as "entry points".
 
-### \[projects.scripts\]
+### pyproject.toml - \[projects.scripts\]
 
-This creates a wrapper script for you which calls the module / method
+This creates a wrapper script in venv/bin for you which calls the module method
 specified.
 
-### \[tool.setuptools\] script-files
+```
+$ zebra-bray 
+kwa-ha!
+```
 
-This copies / installs the program(s) specified.
+### pyproject.toml - \[tool.setuptools\] script-files
 
+This installs the program(s) specified into venv/bin .
+
+```
+$ zebra-wrapper.py 
+kwa-ha!
+```

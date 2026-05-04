@@ -1,6 +1,6 @@
 class zebra:
     def bray(self):
-        print("kwa-ha! 2")
+        print("kwa-ha!")
 
 def do_zebra_run():
     marty = zebra()
