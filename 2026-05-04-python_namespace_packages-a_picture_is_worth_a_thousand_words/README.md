@@ -40,7 +40,7 @@ Most of your code should go into a library.  In this example it's
 src/lib/animals/zebra.py.
 
 This layout allows you to be very agile with new libraries.
-The usage of namespace packages allows you to not use \_\_init\_\_.py .
+The usage of namespace packages allows you to not need \_\_init\_\_.py .
 
 ### src/bin
 
