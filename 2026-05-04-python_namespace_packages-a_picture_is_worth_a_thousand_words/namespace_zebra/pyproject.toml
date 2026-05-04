@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "python_stub2"
+name = "namespace_zebra"
 version = "0.1.0"
 
 [tool.setuptools]
