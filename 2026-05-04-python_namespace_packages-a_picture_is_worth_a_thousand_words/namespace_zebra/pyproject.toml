@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_stub2"
+version = "0.1.0"
+
+[tool.setuptools]
+package-dir = {"" = "src/lib"}
+script-files = ["src/bin/zebra-wrapper.py"]
+
+[project.scripts]
+
+zebra-bray = "animals.zebra:do_zebra_run"
