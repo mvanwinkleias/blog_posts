@@ -16,14 +16,14 @@ Namespace packages in Python are a significant improvement when it comes
 to agility.  You just put a file in a directory, and refer to it appropriately
 and it works.
 
-You can then tell the package building process to include all packages
+You can then tell the package building process to include all "packages"
 in a directory.
 
 ## Layout
 
 This layout is a slight expansion on the "src" style layout.
 It allows you to also organize wrapper scripts if project.scripts
-(mentioned in pyproject.toml) is not cutting it.
+(mentioned in pyproject.toml later) is not cutting it.
 
 
 ```
@@ -48,8 +48,8 @@ The usage of namespace packages allows you to not need \_\_init\_\_.py .
 ### Annotated relevant sections of pyproject.toml
 
 ```toml
-# Install all packages under this dir:
 [tool.setuptools]
+# Include all packages under this directory:
 package-dir = {"" = "src/lib"}
 
 # Optional:
@@ -73,7 +73,7 @@ source venv/bin/activate
 pip install --editable .
 ```
 
-You can edit the files under src/lib without reinstalling them.
+You can now edit the files under src/lib without reinstalling them.
 
 ## Running
 
