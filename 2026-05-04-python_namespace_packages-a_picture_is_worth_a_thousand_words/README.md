@@ -22,6 +22,7 @@ This layout is a slight expansion on the "src" style layout.
 It allows you to also organize wrapper scripts if \[project.scripts\]
 (mentioned in pyproject.toml) is not cutting it.
 
+
 ```
 namespace_zebra/
 ├── pyproject.toml
@@ -33,13 +34,19 @@ namespace_zebra/
             └── zebra.py
 ```
 
-The "meat" of the project is in src/lib/animals/zebra.py .
+All of these files are included in this repo.  They are short.
 
-Most of your code should go into a library.
+Most of your code should go into a library.  In this example it's
+src/lib/animals/zebra.py.
 
 This layout allows you to be very agile with new libraries.
-The usage of namespace packages allows you to not use \_\_init\_\_.py``.
+The usage of namespace packages allows you to not use \_\_init\_\_.py .
 
+### src/bin
+
+This is not "necessary".  2 methods for wrapping / calling your program
+are provided.  They are not mutually exclusive.  This is one of them,
+and is discussed later.
 
 ## Initialization
 
@@ -51,4 +58,14 @@ pip install --editable .
 
 ## Running
 
+Two examples are shown for entry points.
+
+### \[projects.scripts\]
+
+This creates a wrapper script for you which calls the module / method
+specified.
+
+### \[tool.setuptools\] script-files
+
+This copies / installs the program(s) specified.
 
