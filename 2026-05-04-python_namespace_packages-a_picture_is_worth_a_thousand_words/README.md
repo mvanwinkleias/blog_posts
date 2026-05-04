@@ -19,7 +19,7 @@ in a directory.
 ## Layout
 
 This layout is a slight expansion on the "src" style layout.
-It allows you to also organize wrapper scripts if \[project.scripts\]
+It allows you to also organize wrapper scripts if project.scripts
 (mentioned in pyproject.toml) is not cutting it.
 
 
