@@ -2,10 +2,19 @@
 
 This "tutorial" was created for a number of reasons.
 
-* I find existing Python documentation too verbose.
+* I find existing Python documentation on namespace packages too verbose.
 * I complain about people not packaging their things.
 
 I view this as a way to get on the path to fixing those issues.
+
+## Namespace Packages
+
+Namespace packages in Python are a significant improvement when it comes
+to agility.  You just put a file in a directory, and refer to it appropriately
+and it works.
+
+You can then tell the package building process to include all packages
+in a directory.
 
 ## Layout
 
