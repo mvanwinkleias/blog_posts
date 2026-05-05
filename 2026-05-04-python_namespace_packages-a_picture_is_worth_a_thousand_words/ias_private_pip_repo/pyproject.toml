@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ias-private-pip-repo-mvanwinkleias"
+version = "1.1.0"
+authors = [
+	{name = "Martin VanWinkle III", email = "mvanwinkle@ias.edu"},
+]
+description = "Adds files to local pip repos"
+
+dependencies = [
+	"packaging",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src/lib/python3"}
+
+[project.scripts]
+
+# optional
+ias-private-pip-repo-add = "ias.network.private_pip_repo:private_pip_repo_run"
