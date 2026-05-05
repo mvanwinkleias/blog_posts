@@ -104,3 +104,57 @@ kwa-ha!
 python3 -m build
 ```
 
+## Making a pip repo (yay)
+
+At the time I came up with all of this pip was a bit finicky about some
+things.  So, some of this might not be necessary, but here's what can you do...
+
+### Apache Directory Export and Config
+
+* Create a directory and export it with apache
+* pip complains about directory indexes not being valid html5, so you'll need
+to put this in .htaccess :
+```
+<IfModule mod_autoindex.c>
+
+IndexOptions SuppressHTMLPreamble
+HeaderName /pip/wheel_header.html
+
+</IfModule>
+```
+* and then in /pip/wheel_header.html :
+```
+<!DOCTYPE html>
+<html>
+```
+
+### Adding pips to the directory
+
+This repository contains ias_private_pip_repo , which is a pip that helps
+you add pips to pip repo directories.  Build it, install it, run it with:
+```
+ias-private-pip-repo-add \
+    namespace_zebra-0.1.0-py3-none-any.whl \
+    namespace_zebra-0.1.0.tar.gz \
+    /path/to/pip_repo
+```
+
+### Configure pip to use the new repo
+
+* ~/.config/pip/pip.conf
+
+```
+[global]
+extra-index-url = http://localhost:80/pip_repo/
+```
+
+... and you're off
+
+## Conclusion
+
+It took a bit to get Python to this point, and with all of the history
+it has it's a bit difficult to find a clear, direct path to building
+your own pips (in an approved way), making a pip repo, and installing
+them.
+
+My hope is that this will help bring sanity and simplicity.
