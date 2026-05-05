@@ -97,3 +97,10 @@ This installs the program(s) specified into venv/bin .
 $ zebra-wrapper.py 
 kwa-ha!
 ```
+
+## Building a pip
+
+```
+python3 -m build
+```
+
