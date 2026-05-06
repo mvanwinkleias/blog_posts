@@ -95,6 +95,9 @@ As you abstract more code into libraries and the structure of the project
 becomes more clear, it might be more appropriate for you to specify
 a sort of entry point in pyproject.toml .  That's what zebra-bray is.
 
+The sections below refer to how those entry points / scripts / wrappers
+get specified in pyproject.toml .
+
 ### pyproject.toml - \[projects.scripts\]
 
 The build system will create a wrapper script in venv/bin for you
