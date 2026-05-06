@@ -39,8 +39,11 @@ namespace_zebra/
 
 All of these files are included in this repo.  They are short.
 
-Most of your code should go into a library.  In this example it's
-src/lib/animals/zebra.py.
+If you are still in an exploratory phase for whatever you're writing, then
+putting all of your code in something like src/bin/zebra-wrapper.py is okay.
+
+When you start to abstracting things away, then ost of your code should go into a library.
+In this example it's src/lib/animals/zebra.py.
 
 This layout allows you to be very agile with new libraries.
 The usage of namespace packages allows you to not need \_\_init\_\_.py .
