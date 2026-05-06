@@ -86,7 +86,14 @@ You can now edit the files under src/lib without reinstalling them.
 
 ## Running
 
-Two examples provided as "entry points".
+Two example "entry points" are provided.
+
+When you don't know where the project is taking you, a singular file
+in src/bin that you edit and run is OK.  That's what zebra-wrapper.py is .
+
+As you abstract more code into libraries and the structure of the project
+becomes more clear, it might be more appropriate for you to specify
+a sort of entry point in pyproject.toml .  That's what zebra-bray is.
 
 ### pyproject.toml - \[projects.scripts\]
 
