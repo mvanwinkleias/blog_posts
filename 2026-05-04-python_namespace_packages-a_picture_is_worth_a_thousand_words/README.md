@@ -10,6 +10,12 @@ I view this as a way to get on the path to fixing those issues.
 I recommend you just read through all of the files in namespace_zebra to get
 an idea of what's going on.
 
+## Audience
+
+This is not a Python tutorial, or a programming tutorial.
+This is more of a project layout / architecture tutorial.
+
+
 ## Namespace Packages
 
 Namespace packages in Python are a significant improvement when it comes
