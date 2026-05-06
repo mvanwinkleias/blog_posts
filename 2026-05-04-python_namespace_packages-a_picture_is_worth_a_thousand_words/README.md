@@ -48,7 +48,7 @@ All of these files are included in this repo.  They are short.
 If you are still in an exploratory phase for whatever you're writing, then
 putting all of your code in something like src/bin/zebra-wrapper.py is okay.
 
-When you start to abstracting things away, then ost of your code should go into a library.
+When you start to abstracting things away, then most of your code should go into a library.
 In this example it's src/lib/animals/zebra.py.
 
 This layout allows you to be very agile with new libraries.
@@ -70,8 +70,8 @@ script-files = ["src/bin/zebra-wrapper.py"]
 [project.scripts]
 
 # Optional:
-# If you want a wrapper script set up for you that calls
-# a subroutine inside of a file, use this:
+# If you want a generic wrapper that calls a subroutine
+# inside of a file, use this:
 zebra-bray = "animals.zebra:do_zebra_run"
 ```
 ## Initialization
