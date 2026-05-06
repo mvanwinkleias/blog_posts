@@ -90,8 +90,8 @@ Two examples provided as "entry points".
 
 ### pyproject.toml - \[projects.scripts\]
 
-This creates a wrapper script in venv/bin for you which calls the module method
-specified.
+The build system will create a wrapper script in venv/bin for you
+which calls the module method specified.
 
 ```
 $ zebra-bray 
