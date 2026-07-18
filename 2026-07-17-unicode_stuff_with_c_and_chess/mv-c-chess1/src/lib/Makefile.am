@@ -24,7 +24,9 @@ libmv_c_chess1_la_SOURCES = \
 	mv-c-chess1.h \
 	mv-c-chess1.map 
 
-include_HEADERS = mv-c-chess1.h
+
+include_HEADERS = \
+	mv-c-chess1.h 
 
 # If we don't initialize this, we can't use += later, so
 # we just assume this is the only place where this variable is initailzed.

@@ -48,37 +48,7 @@ typedef struct chess_piece {
 
 typedef chess_piece * chess_state[32];
 
-short int is_valid_move_pawn(
-	chess_state * game,
-	chess_piece * piece
-);
-
-
-short int is_valid_move_knight(
-	chess_state * game,
-	chess_piece * piece
-);
-
-short int is_valid_move_bishop(
-	chess_state * game,
-	chess_piece * piece
-);
-
-
-short int is_valid_move_rook(
-	chess_state * game,
-	chess_piece * piece
-);
-
-short int is_valid_move_queen(
-	chess_state * game,
-	chess_piece * piece
-);
-
-short int is_valid_move_king(
-	chess_state * game,
-	chess_piece * piece
-);
+#include "mv-chess-piece-movement.c"
 
 #endif // mv_c_chess1__
 
