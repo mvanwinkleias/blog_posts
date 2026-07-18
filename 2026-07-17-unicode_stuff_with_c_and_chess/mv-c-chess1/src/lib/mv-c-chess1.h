@@ -22,6 +22,11 @@ wchar_t chess_board[CHESS_BOARD_ROWS][CHESS_BOARD_COLS] = {
 	L"♖♘♗♕♔♗♘♖",
 };
 
+enum Player_Colors {
+	Player_White,
+	Player_Black,
+};
+
 enum Chess_Pieces {
 	Piece_Pawn,
 	Piece_Knight,
@@ -30,6 +35,22 @@ enum Chess_Pieces {
 	Piece_Queen,
 	Piece_King,
 };
+
+	
+typedef struct chess_piece {
+	short int value;
+	short int row;
+	short int col;
+	short int color;
+	short int is_alive;
+	short int * is_valid_move;
+} chess_piece;
+
+typedef chess_piece chess_state[32];
+
+short int is_valid_move_pawn(
+	chess_state * game
+);
 
 #endif // mv_c_chess1__
 
