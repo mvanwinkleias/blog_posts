@@ -22,7 +22,14 @@ wchar_t chess_board[CHESS_BOARD_ROWS][CHESS_BOARD_COLS] = {
 	L"♖♘♗♕♔♗♘♖",
 };
 
-
+enum Chess_Pieces {
+	Piece_Pawn,
+	Piece_Knight,
+	Piece_Bishop,
+	Piece_Rook,
+	Piece_Queen,
+	Piece_King,
+};
 
 #endif // mv_c_chess1__
 
