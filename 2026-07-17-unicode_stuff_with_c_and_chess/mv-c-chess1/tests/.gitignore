@@ -1,0 +1,12 @@
+.deps
+.libs
+*.lo
+*.o
+*.pc
+*.la
+
+*.log
+
+*.trs
+
+check*

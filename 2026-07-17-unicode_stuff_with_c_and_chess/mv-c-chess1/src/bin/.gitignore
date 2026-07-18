@@ -1,0 +1,5 @@
+mv-c-chess1_runner
+.deps
+.libs
+*.o
+

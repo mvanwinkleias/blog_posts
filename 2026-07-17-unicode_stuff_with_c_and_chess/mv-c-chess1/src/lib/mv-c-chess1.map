@@ -1,0 +1,11 @@
+/*
+Please see:
+* https://www.gnu.org/software/gnulib/manual/html_node/LD-Version-Scripts.html
+
+*/
+
+MV_C_CHESS1_1.0 {
+	global: *;
+	/* libfoo_init; libfoo_doit; libfoo_done; */
+	local: *;
+};

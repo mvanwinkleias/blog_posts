@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: mv-c-chess1
+Description: Chess in C
+URL: 
+Version: @VERSION@
+dnl Requires: <dependencies>
+Libs: -L${libdir} -lmv-c-chess1
+Cflags: -I${includedir}/mv-c-chess1
