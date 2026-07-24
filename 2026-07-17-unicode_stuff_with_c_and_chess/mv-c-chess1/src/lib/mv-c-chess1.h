@@ -36,11 +36,21 @@ enum Chess_Pieces {
 	Piece_King,
 };
 
+
+
+
+typedef chess_piece * chess_state[32];
+
 typedef struct chess_piece_type {
 	enum Chess_Pieces type;
 	short int value;
-	short int * move_checker;
+	short int (*move_checker)(chess_state * game, chess_piece * piece);
 } chess_piece_type;
+
+short int is_valid_move_pawn(
+	chess_state * game,
+	chess_piece * piece
+);
 
 
 typedef struct chess_piece {
@@ -52,41 +62,31 @@ typedef struct chess_piece {
 	short int * is_valid_move;
 } chess_piece;
 
-typedef chess_piece * chess_state[32];
+short int is_valid_move_knight(
+	chess_state * game,
+	chess_piece * piece
+);
+
+short int is_valid_move_bishop(
+	chess_state * game,
+	chess_piece * piece
+);
 
 
-#include "mv-chess-piece-movement.c"
+short int is_valid_move_rook(
+	chess_state * game,
+	chess_piece * piece
+);
 
-chess_piece_type chess_piece_type_pawn = {
-	Piece_Pawn,
-	1,
-	*is_valid_move_pawn
-};
+short int is_valid_move_queen(
+	chess_state * game,
+	chess_piece * piece
+);
 
-chess_piece_type chess_piece_type_knight = {
-	Piece_Knight,
-	3
-};
-
-chess_piece_type chess_peice_type_bishop = {
-	Piece_Bishop,
-	3
-};
-
-chess_piece_type chess_peice_type_rook = {
-	Piece_Rook,
-	5
-};
-
-chess_piece_type chess_piece_type_queen = {
-	Piece_Queen,
-	9
-};
-
-chess_piece_type chess_piece_type_king = {
-	Piece_King,
-	0,
-};
+short int is_valid_move_king(
+	chess_state * game,
+	chess_piece * piece
+);
 
 #endif // mv_c_chess1__
 
